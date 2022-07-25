@@ -1,0 +1,12 @@
+body {
+	padding: 25px;
+	background-color: rgb(37, 37, 37);
+	color: rgb(24, 52, 211);
+	font-size: 25px;
+}
+@media (prefers-color-scheme: light) {
+	body {
+		background: #ebebeb;
+		color: rgb(199, 26, 26);
+	}
+}
