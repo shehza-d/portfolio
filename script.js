@@ -14,7 +14,7 @@
 
 document.addEventListener('mousemove', parallaxFun);
 function parallaxFun(e){
-	this.querySelectorAll('.welcomeShehzad').forEach(layer => {
+	this.querySelectorAll('.welcomeShehzad').forEach(welcomeShehzad => {
 		const speed = welcomeShehzad.getAttribute('data-Speed')
 
 		const x = (window.innerWidth - e.pageX*speed)/100

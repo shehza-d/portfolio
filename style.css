@@ -1,6 +1,6 @@
-*{
+/* *{
 	box-sizing: border-box;
-}
+} */
 
 body {
 	padding: 0px;
@@ -17,6 +17,7 @@ body {
 		color: rgb(0, 0, 0);
 	}
 }
+
 .parallax {
 	width: 100%;
 	height: 100vh;
@@ -25,7 +26,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	flex-direction: column;
 	/* background-image: url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 	background-size: cover;
 	background-position: center;
@@ -37,9 +38,21 @@ body {
 	left: 0;
 	z-index: -1; */
 	/* transform: rotate(-10deg); */
-
 }
+
+/* parallax::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	left: 15px;
+	height: 10%;
+	width: 70%;
+	box-shadow: -35px 35px 5px 10px rgba(0, 0, 0, 0.75);
+	transform: skewX(10deg);
+} */
 .welcomeShehzad {
+	margin: 10px;
 	/* display: flex;
 	justify-content: center;
 	align-items: center; */
@@ -47,10 +60,37 @@ body {
 	font-family: 'Comforter', cursive;
 	position: relative;
 	text-shadow: red 2px 2px 2px;
-	box-shadow: blue -15px 155px 20px 2px;
+	/* box-shadow: blue -15px 155px 20px 2px; */
 	/* background-color: transparent; */
+
+}
+.scroll{
+	margin: 2px;
+	font-weight: 200;
+	font-size: 15px;
 }
 
+.nav-bar{
+ height: 100vh;
+ width: 70px;
+ border: 3px solid red;
+display: flex;
+}
+.nav-ul{
+	list-style: none;
+	margin: 2px;
+	padding: 2px;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	writing-mode: vertical-rl;
+	text-orientation: sideways-right;
+}
+.nav-ul>li{
+	/* text-orientation: mixed; */
+flex-wrap: wrap;
+padding: 3px;
+}
 
 .content {
 	display: flex;
@@ -61,4 +101,28 @@ body {
 	height: auto;
 	margin: auto;
 	max-width: 1200px;
+}
+
+blockquote{
+	direction: ltr;
+}
+
+
+
+
+
+
+
+footer{
+	height: 21px;
+	background-color: green;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+footer>p{
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+	/* color: white; */
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			/* display: inline-block; */
+			height: 150px;
+			width: 350px;
+			/* background: url(https://via.placeholder.com/150); */
+			margin-left: 130px;
+			background-color: transparent;
+		}
+
+		div::before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			bottom: 0;
+			left: 15px;
+			height: 10%;
+			width: 70%;
+			box-shadow: -35px 35px 5px 10px rgba(0, 0, 0, 0.75);
+			transform: skewX(10deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div> Hello WoRld </div>
+</body>
+
+</html>
