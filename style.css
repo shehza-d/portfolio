@@ -25,6 +25,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	/* background-image: url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 	background-size: cover;
 	background-position: center;
@@ -35,6 +36,8 @@ body {
 	top: 0;
 	left: 0;
 	z-index: -1; */
+	/* transform: rotate(-10deg); */
+
 }
 .welcomeShehzad {
 	/* display: flex;
@@ -43,6 +46,9 @@ body {
 	font-size: 120px;
 	font-family: 'Comforter', cursive;
 	position: relative;
+	text-shadow: red 2px 2px 2px;
+	box-shadow: blue -15px 155px 20px 2px;
+	/* background-color: transparent; */
 }
 
 
