@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;800&display=swap');
 /* *{
 	box-sizing: border-box;
 } */
@@ -5,7 +6,7 @@
 body {
 	padding: 0px;
 	margin: 0px;
-	/* background-color: rgb(0, 0, 0); */
+	/* background-color: rgb(2, 2, 2); */
 	/* background-image: linear-gradient(to left bottom, #000000, #050505, #090909, #0d0d0d, #111111);
 	color: rgb(255, 255, 255); */
 }
@@ -102,6 +103,10 @@ body {
 	padding: 3px;
 	margin-bottom: 20px;
 	/* border: 2px solid red; */
+	cursor: crosshair;
+}
+.nav-ul>li:hover{
+	font-weight: bolder;
 }
 
 .content {
@@ -123,18 +128,21 @@ blockquote {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 110px;
 }
 .animation_img{
 	width: 60%;
 }
 
-
+h2{
+	color: #31F711FF;
+}
 
 
 
 footer {
-	height: 21px;
-	background-color: green;
+	height: 80px;
+	background-color: #31F711FF;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
@@ -145,4 +153,8 @@ footer>p {
 	padding: 0px;
 	font-size: 18px;
 	/* color: white; */
+}
+
+*{
+	font-family: 'Manrope', sans-serif;
 }
