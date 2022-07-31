@@ -1,6 +1,9 @@
 body {
 	/* padding: 25px; */
-	background-color: rgb(37, 37, 37);
-	color: rgb(24, 52, 211);
+	background-color: rgb(0, 0, 0);
+	/* color: rgb(241, 241, 241); */
 	/* font-size: 25px; */
+}
+.welcomeShehzad{
+	color: white;
 }

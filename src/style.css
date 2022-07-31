@@ -6,17 +6,17 @@ body {
 	padding: 0px;
 	margin: 0px;
 	/* background-color: rgb(0, 0, 0); */
-	background-image: linear-gradient(to left bottom, #000000, #050505, #090909, #0d0d0d, #111111);
-	color: rgb(255, 255, 255);
+	/* background-image: linear-gradient(to left bottom, #000000, #050505, #090909, #0d0d0d, #111111);
+	color: rgb(255, 255, 255); */
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
 	body {
-		/* background: #ffffff; */
+		background: #ffffff; 
 		background-image: linear-gradient(to left bottom, #ffffff, #efefef, #e0e0e0, #d0d0d0, #c1c1c1);
 		color: rgb(0, 0, 0);
 	}
-}
+} */
 
 .parallax {
 	width: 100%;
@@ -68,6 +68,7 @@ body {
 	margin: 2px;
 	font-weight: 200;
 	font-size: 15px;
+	font-family: monospace;
 }
 
 .nav-bar{
@@ -106,7 +107,11 @@ padding: 3px;
 blockquote{
 	direction: ltr;
 }
-
+.animation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
 
