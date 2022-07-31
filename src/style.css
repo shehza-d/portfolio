@@ -192,9 +192,12 @@ blockquote {
 }
 .skills_ul>li{
 	border: 2px solid green;
+	position: relative;
 	/* text-align: center; */
 }
-
+.hoverdiv{
+background-color: #fffc3a;
+}
 
 
 
