@@ -6,11 +6,13 @@
 body {
 	padding: 0px;
 	margin: 0px;
+	height: 100vh;
 	/* background-color: rgb(2, 2, 2); */
 	/* background-image: linear-gradient(to left bottom, #000000, #050505, #090909, #0d0d0d, #111111);
 	color: rgb(255, 255, 255); */
 	/* overflow: hidden; */
 	scroll-behavior: smooth;	
+	cursor: url('../img/cursor-24.png'), auto !important;
 }
 
 /* @media (prefers-color-scheme: light) {
@@ -90,7 +92,7 @@ main{
 .nav-bar {
 	height: 100%;
 	width: 70px;
-	border: 3px solid red;
+	/* border: 3px solid red; */
 	/* display: flex; */
 	display: inline-block;
 	/* justify-content:flex-start; */
@@ -130,7 +132,17 @@ main{
 	color: inherit;
 	cursor: crosshair;
 }
-.content {
+.myPhotoDiv{
+	/* width: 100%; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.myPhoto{
+	width: 420px;
+	border-radius: 50%;
+}
+/* .content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -139,7 +151,7 @@ main{
 	height: auto;
 	margin: auto;
 	max-width: 1200px;
-}
+} */
 
 blockquote {
 	direction: ltr;
