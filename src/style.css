@@ -11,7 +11,7 @@ body {
 	/* background-image: linear-gradient(to left bottom, #000000, #050505, #090909, #0d0d0d, #111111);
 	color: rgb(255, 255, 255); */
 	/* overflow: hidden; */
-	scroll-behavior: smooth;	
+	scroll-behavior: smooth;
 	cursor: url('../img/cursor-24.png'), auto !important;
 }
 
@@ -56,13 +56,15 @@ body {
 	box-shadow: -35px 35px 5px 10px rgba(0, 0, 0, 0.75);
 	transform: skewX(10deg);
 } */
-.container{
+.container {
 	/* overflow-y: scroll; */
 	scroll-behavior: smooth;
 }
-main{
+
+main {
 	margin-right: 80px;
 }
+
 .welcomeShehzad {
 	margin: 10px;
 	/* display: flex;
@@ -83,7 +85,8 @@ main{
 	font-size: 15px;
 	font-family: monospace;
 }
-.navBarDiv{
+
+.navBarDiv {
 	display: flex;
 	/* flex-direction:  */
 	justify-content: flex-end;
@@ -112,8 +115,8 @@ main{
 	align-items: center;
 	writing-mode: vertical-rl;
 	/* text-orientation: sideways-right; */
-	
-	 
+
+
 }
 
 .nav-ul>li {
@@ -123,25 +126,30 @@ main{
 	/* border: 2px solid red; */
 	cursor: crosshair;
 }
-.nav-ul>li:hover{
+
+.nav-ul>li:hover {
 	font-weight: bolder;
 }
+
 .nav-ul>li>a {
-	text-decoration: none ;
+	text-decoration: none;
 	text-transform: uppercase;
 	color: inherit;
 	cursor: crosshair;
 }
-.myPhotoDiv{
+
+.myPhotoDiv {
 	/* width: 100%; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.myPhoto{
+
+.myPhoto {
 	width: 420px;
 	border-radius: 50%;
 }
+
 /* .content {
 	display: flex;
 	justify-content: center;
@@ -163,22 +171,44 @@ blockquote {
 	align-items: center;
 	height: 110px;
 }
-.animation_img{
+
+.animation_img {
 	width: 60%;
 }
 
-h2{
+h2 {
 	color: #31F711FF;
 }
 
 
+.contact_ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+#newsLetter>input,
+#newsLetter>button {
+	padding: 14px;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 8px 8px 30px black;
+}
+#newsLetter>button:hover{
+cursor: pointer;
+}
+
+#newsLetter>label {
+	display: block;
+}
 
 footer {
-	height: 80px;
+	height: 180px;
 	background-color: #31F711FF;
 	margin: 0px;
 	padding: 0px;
-	text-align: center;
 }
 
 footer>p {
@@ -186,8 +216,10 @@ footer>p {
 	padding: 0px;
 	font-size: 18px;
 	/* color: white; */
+	text-align: center;
+	/* bottom: 10px; */
 }
 
-*{
+* {
 	font-family: 'Manrope', sans-serif;
 }
