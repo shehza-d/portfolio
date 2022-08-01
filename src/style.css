@@ -178,7 +178,7 @@ blockquote {
 
 
 
-.skills_ul{
+.skills_ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -190,15 +190,24 @@ blockquote {
 
 	border: 5px solid red;
 }
-.skills_ul>li{
+
+.skills_ul>li {
 	border: 2px solid green;
 	position: relative;
 	/* text-align: center; */
 }
-.hoverdiv{
-background-color: #fffc3a;
+.hoverdiv {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: #d6d316e0;
+	transition:all .3s;
 }
-
+.hoverdiv :hover {
+	width: 100%;
+}
 
 
 .contact_ul {
@@ -208,24 +217,29 @@ background-color: #fffc3a;
 	/* justify-content: center; */
 	align-items: center;
 }
-.iconscontainer {
-    list-style: none;
-    display: flex;
-    fill: #ffffff;
-    margin: 15px;
-    /* width: 20px; */
+
+.contact_ul>li {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 380px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+
+
+
+	border: 2px solid red;
 }
 
 .icon {
-    padding-right: 13px;
-    fill: white;
-    width: 18px;
-    cursor: pointer;
+	width: 24px;
+	cursor: pointer;
 }
 
 .icon:hover {
-    fill: #fffc3a;
+	fill: #31F711FF;
 }
+
 #newsLetter>input,
 #newsLetter>button {
 	padding: 14px;
@@ -233,8 +247,9 @@ background-color: #fffc3a;
 	border: none;
 	box-shadow: 8px 8px 30px black;
 }
-#newsLetter>button:hover{
-cursor: pointer;
+
+#newsLetter>button:hover {
+	cursor: pointer;
 }
 
 #newsLetter>label {
@@ -256,9 +271,11 @@ footer>p {
 	text-align: center;
 	/* bottom: 10px; */
 }
+
 h2 {
 	color: #31F711FF;
 }
+
 * {
 	font-family: 'Manrope', sans-serif;
 }
