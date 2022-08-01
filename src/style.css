@@ -203,7 +203,7 @@ blockquote {
 	width: 0%;
 	height: 100%;
 	background-color: #d6d316e0;
-	transition:all .3s;
+	/* transition:all .3s; */
 }
 .hoverdiv :hover {
 	width: 100%;
@@ -218,7 +218,8 @@ blockquote {
 	align-items: center;
 }
 
-.contact_ul>li {
+.contact_ul>li>a {
+	text-decoration: none;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
