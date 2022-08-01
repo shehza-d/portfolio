@@ -91,6 +91,16 @@ a{
 .about_para{
 margin-left: 10px;
 }
+blockquote{
+	margin: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .navBarDiv {
 	display: flex;
 	/* flex-direction:  */
