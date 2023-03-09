@@ -4,7 +4,5 @@
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <main className={`bg-red-400`}>idher sab components import hongye</main>
-  );
+  return <main className={``}>idher sab components import hongye</main>;
 }
