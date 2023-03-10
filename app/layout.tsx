@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Outfit } from "@next/font/google";
+// import Script from "next/script";
 
 const font = Outfit({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ export const metadata = {
     { name: "Shehzad" },
     { name: "Shehzad", url: "https://shehzad.vercel.app" },
   ],
-  colorScheme: "dark",
+  colorScheme: "dark light",
   creator: "Shehzad",
   publisher: "Shehzad",
   alternates: {},
@@ -70,7 +71,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={font.style}>
-      <body>{children}</body>
+      <body>
+        {children}
+
+        {/* <Script id="show-particles">
+          {`   `}
+        </Script> */}
+      </body>
     </html>
   );
 }
