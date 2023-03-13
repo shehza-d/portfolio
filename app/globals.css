@@ -23,34 +23,68 @@
 .bdr4 {
   border: 2px solid yellow;
 }
+/* nav */
+.navBarDiv {
+  display: flex;
+  /* flex-direction:  */
+  justify-content: flex-end;
+}
+
+.nav-bar {
+  height: 100%;
+  width: 70px;
+  /* border: 3px solid red; */
+  /* display: flex; */
+  display: inline-block;
+  /* justify-content:flex-start; */
+  position: fixed;
+  top: 100px;
+  z-index: 1;
+}
+
+.nav-ul {
+  list-style: none;
+  width: 100%;
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  /* text-orientation: sideways-right; */
+}
+
+.nav-ul > li {
+  /* text-orientation: mixed; */
+  padding: 3px;
+  margin-bottom: 20px;
+  /* border: 2px solid red; */
+  cursor: crosshair;
+}
+
+.nav-ul > li:hover {
+  font-weight: bolder;
+}
+
+.nav-ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  cursor: crosshair;
+}
+/* navbar */
 
 /* partical */
-/* ---- particles.js container ---- */
 #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #19b1b6;
-  /* background-image: url(""); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-} /* ---- stats.js ---- */
-
-.js-count-particles {
-  font-size: 1.1em;
-}
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-.count-particles {
-  border-radius: 0 0 3px 3px;
+  position: fixed;
+  top: 0;
+  background-attachment: fixed;
+  z-index: 5;
+  /* border: 2px solid red; */
+  /* width: 100%; */
+  height: 100vh;
+  background-color: transparent;
+  /* background-position: 50% 50%; */
 }
 /* partical */

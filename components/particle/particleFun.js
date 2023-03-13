@@ -4,7 +4,7 @@ export default function particlesJSFun() {
     particlesJS("particles-js", {
       particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#ffffff" },
+        color: { value: "#2514dc" },
         shape: {
           type: "circle",
           stroke: { width: 0, color: "#000000" },
@@ -24,7 +24,7 @@ export default function particlesJSFun() {
         line_linked: {
           enable: true,
           distance: 150,
-          color: "#ffffff",
+          color: "#000", //
           opacity: 0.4,
           width: 1,
         },
@@ -43,7 +43,7 @@ export default function particlesJSFun() {
         detect_on: "canvas",
         events: {
           onhover: { enable: true, mode: "grab" },
-          onclick: { enable: true, mode: "push" },
+          onclick: { enable: true, mode: "repulse" },
           resize: true,
         },
         modes: {
@@ -55,7 +55,7 @@ export default function particlesJSFun() {
             opacity: 8,
             speed: 3,
           },
-          repulse: { distance: 200, duration: 0.4 },
+          repulse: { distance: 300, duration: 0.5 },
           push: { particles_nb: 4 },
           remove: { particles_nb: 2 },
         },
