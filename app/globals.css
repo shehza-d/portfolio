@@ -6,6 +6,24 @@
   @apply selection:bg-accent;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bdr {
+  border: 2px solid red;
+}
+.bdr2 {
+  border: 2px solid green;
+}
+.bdr3 {
+  border: 2px solid blue;
+}
+.bdr4 {
+  border: 2px solid yellow;
+}
+
 /* partical */
 /* ---- particles.js container ---- */
 #particles-js {

@@ -1,6 +1,6 @@
 "use client";
 import Script from "next/script";
-import particlesJSFun from "./index";
+import particlesJSFun from "./particleFun";
 
 export default function Particle() {
   return (

@@ -1,2 +1,3 @@
 import Particle from "./particle/Particle";
-export { Particle };
+import Footer from "./utils/Footer";
+export { Particle, Footer };

@@ -1,3 +1,3 @@
 export default function Page() {
-  return <div>Page of project</div>;
+  return <div className="">Page of project</div>;
 }

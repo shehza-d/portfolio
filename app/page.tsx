@@ -4,7 +4,7 @@ import { Particle } from "@/components/";
 export default function Home() {
   return (
     <main className={``}>
-      <div id="particles-js"></div>
+      {/* <div id="particles-js"></div> */}
       idher sab components import hongye
       <Particle />
     </main>

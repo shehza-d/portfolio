@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Outfit } from "@next/font/google";
 // import Script from "next/script";
+import { Footer } from "@/components";
 
 const font = Outfit({
   subsets: ["latin"],
@@ -71,12 +72,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={font.style}>
-      <body>
+      <body className="grid min-h-screen grid-rows-[1fr,auto]">
         {children}
-
-        {/* <Script id="show-particles">
-          {`   `}
-        </Script> */}
+        <Footer />
       </body>
     </html>
   );
