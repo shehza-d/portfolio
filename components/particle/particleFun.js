@@ -4,7 +4,7 @@ export default function particlesJSFun() {
     particlesJS("particles-js", {
       particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#2514dc" },
+        color: { value: "#31F711" },
         shape: {
           type: "circle",
           stroke: { width: 0, color: "#000000" },

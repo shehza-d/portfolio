@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root {
+  accent-color: #31f711;
+}
 * {
   @apply selection:bg-accent;
 }
@@ -75,7 +77,30 @@
 }
 /* navbar */
 
-/* partical */
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #66f07d #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #66f07d;
+  border-radius: 12px;
+  border: 0px solid #ffffff;
+}
+/* =====  Scrollbar CSS ===== */
+
+/* =====  partical ===== */
 #particles-js {
   position: fixed;
   top: 0;
