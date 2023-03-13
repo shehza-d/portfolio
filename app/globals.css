@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  accent-color: #31f711;
+  --accent-color: #31f711;
+  /* --accent-color: #42e229ea; */
 }
 * {
   @apply selection:bg-accent;
 }
-
+.heading_gradient {
+  @apply bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -86,17 +89,20 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
   background: transparent;
+  /* background-color: #ebebeb;
+  -webkit-border-radius: 12px;
+  border-radius: 12px; */
 }
-
 *::-webkit-scrollbar-thumb {
-  background-color: #66f07d;
+  background-color: var(--accent-color);
   border-radius: 12px;
-  border: 0px solid #ffffff;
+  /* border: 0px solid #ffffff; */
+  border: none;
 }
 /* =====  Scrollbar CSS ===== */
 

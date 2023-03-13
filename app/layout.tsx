@@ -5,7 +5,7 @@ import { Footer } from "@/components";
 
 const font = Outfit({
   subsets: ["latin"],
-  weight: ["200", "400", "500", "600", "700", "800", "900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
   // variable: '--font-outfit', // optional for tailwind
 });

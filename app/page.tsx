@@ -1,11 +1,12 @@
 // import Image from "next/image";
-import { Particle, Hero } from "@/components";
+import { About, Particle, Hero } from "@/components";
 
 export default function Home() {
   return (
-    <main className={`mx-6 max-w-[1200px]`}>
+    <main className={``}>
       <Particle />
       <Hero />
+      <About />
       <p className="">
         sshhdf Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
         laboriosam reiciendis iste voluptatibus doloribus, qui pariatur sunt
