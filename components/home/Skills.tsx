@@ -1,35 +1,28 @@
-import Icons from "../utils/Icons";
-import Image from "next/image";
+import { Icons } from "@/components";
+import { skills } from "@/data";
+
+// export async function generateStaticParams() {
+//   const posts = await fetch('https://.../posts').then((res) => res.json());
+
+//   return posts.map((post) => ({
+//     slug: post.slug,
+//   }));
+// }
 
 export default function Skills() {
-  const data = [
-    {
-      id: "1",
-      title: "AWS",
-      icon: "aws",
-      alt: "amazon web service",
-      percent: 10,
-    },
-    { id: "2", title: "AWS", icon: "aws", alt: "amazon web service" },
-    { id: "3", title: "AWS", icon: "aws", alt: "amazon web service" },
-    { id: "4", title: "AWS", icon: "aws", alt: "amazon web service" },
-    { id: "5", title: "AWS", icon: "aws", alt: "amazon web service" },
-    { id: "6", title: "AWS", icon: "aws", alt: "amazon web service" },
-    { id: "7", title: "AWS", icon: "aws", alt: "amazon web service" },
-    { id: "8", title: "AWS", icon: "aws", alt: "amazon web service" },
-    { id: "9", title: "AWS", icon: "aws", alt: "amazon web service" },
-    { id: "10", title: "AWS", icon: "aws", alt: "amazon web service" },
-    { id: "11", title: "AWS", icon: "aws", alt: "amazon web service" },
-  ];
-
   return (
-    <section>
-      <h2 className="heading_gradient self-start text-4xl font-bold">Skills</h2>
-      <ul className="font-light text-slate-800">
-        {data.map((item) => (
-          <li key={item.id}>
-            {item.title}
-            <Icons icon={item.icon} alt={item.alt} />
+    <section className="my-8 mx-8">
+      <h2 className="gradient heading self-start">Languages and Tools ⚙</h2>
+      <ul className="grid grid-cols-1 justify-items-center gap-4 font-light text-slate-800 md:grid-cols-2">
+        {skills.map((item) => (
+          <li
+            className="flex w-5/6 items-center justify-between rounded-[20px] shadow-lg"
+            key={item.id}
+          >
+            <h5 className="pl-8 text-2xl font-medium capitalize">
+              {item.title}
+            </h5>
+            <Icons icon={item.icon} alt={item.additionalInfo} />
           </li>
         ))}
       </ul>

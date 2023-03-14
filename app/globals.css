@@ -8,8 +8,11 @@
 * {
   @apply selection:bg-accent;
 }
-.heading_gradient {
+.gradient {
   @apply bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent;
+}
+.heading {
+  @apply pt-6 pb-4 text-4xl font-bold;
 }
 .center {
   display: flex;

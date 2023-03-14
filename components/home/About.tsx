@@ -49,9 +49,8 @@ export default function About() {
         SHEHZAD IQBAL WEB DEVELOPER SMIT PIAIC PANAVERSE SAYLANI
       </h1>
       <h1 className="inline text-[1px] opacity-0">Making Code Beneficial</h1>
-      <h2 className="heading_gradient self-start text-4xl font-bold">
-        Introduction
-      </h2>
+      <h2 className="heading gradient self-start">Introduction</h2>
+
       <p className="text-justify text-lg font-light text-slate-800 lg:text-xl">
         A young and enthusiastic individual{" "}
         <span className="heading_gradient inline">Making Code Beneficial</span>{" "}
@@ -67,18 +66,18 @@ export default function About() {
         progressive organization offering ample opportunities and diversified
         exposure where he could enhance his experience.
       </p>
-      <ul className="font-light text-slate-800">
+      <ul className="m-4 font-light text-slate-800">
         {data.map((item) => (
-          <li className="pr-4" key={item.id}>
+          <li className="pl-4 text-justify" key={item.id}>
             - {item.li}
           </li>
         ))}
       </ul>
 
-      <blockquote>
+      {/*  <blockquote>
         جو جنوں کی ره پر چل پڑے ، اُنھیں منزلوں نے پناہ دی جنہیں وسوسوں نے بہکا
         دیا، وہ قدم قدم پر بھٹک گئے
-      </blockquote>
+      </blockquote> */}
     </section>
   );
 }

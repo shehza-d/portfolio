@@ -1,16 +1,20 @@
 import Image from "next/image";
 
-interface MyComponentProps {
+type IconProps = {
   icon: string;
   alt: string;
-}
+};
 
-export default function Icons({ icon, alt }: MyComponentProps) {
+export default function Icons({ icon, alt }: IconProps) {
+  const darkMode = true;
   return (
     <Image
-      src={`https://skillicons.dev/icons?i=${icon}`}
+      src={`https://skillicons.dev/icons?i=${icon}&theme=${
+        darkMode ? "dark" : "light"
+      }`}
       width={75}
       height={75}
+      // title={"fdfd"}
       alt={alt}
     />
   );
