@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "skillicons.dev",
+        port: "",
+        // pathname: '/account123/**',
+      },
+    ],
+  },
   experimental: {
     appDir: true,
   },
-}
-
-module.exports = nextConfig
+};

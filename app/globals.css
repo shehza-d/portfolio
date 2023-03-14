@@ -28,6 +28,26 @@
 .bdr4 {
   border: 2px solid yellow;
 }
+
+/* glow */
+
+.bg_glow::after {
+  /* jisper ye lage ga uski position relative karni hogyi */
+  content: "";
+  background: rgba(15, 189, 15, 0.351);
+  width: 240px;
+  height: 180px;
+  position: absolute;
+  z-index: 4;
+  border-radius: 50%;
+  /* left: 50%; */
+  /* top: -50px; */
+  filter: blur(65px);
+  /* transform: translateZ(0); */
+  /* isolation: isolate; */
+}
+/* glow */
+
 /* nav */
 .navBarDiv {
   display: flex;

@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import { About, Particle, Hero } from "@/components";
+import { About, Particle, Hero, Skills } from "@/components";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Particle />
       <Hero />
       <About />
+      <Skills />
       <p className="">
         sshhdf Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
         laboriosam reiciendis iste voluptatibus doloribus, qui pariatur sunt
