@@ -6,9 +6,10 @@ export default function Footer() {
       <Link
         prefetch={false}
         className="py-1 px-3 underline-offset-4 hover:underline"
-        href="www.github.com/shehza-d"
+        href="https://github.com/shehza-d"
+        target="_blank"
       >
-        built by SHEHZAD
+        Built and Designed by ME
       </Link>
     </footer>
   );

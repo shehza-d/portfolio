@@ -7,6 +7,7 @@ type IconProps = {
 
 export default function Icons({ icon, alt }: IconProps) {
   const darkMode = true;
+
   return (
     <Image
       src={`https://skillicons.dev/icons?i=${icon}&theme=${
