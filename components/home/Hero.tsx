@@ -1,6 +1,6 @@
 "use client";
 // import nameSvg from '../../public/Vector.svg'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
   useEffect(() => {
@@ -32,6 +32,13 @@ export default function Hero() {
     };
   }, []);
 
+  // const [isLoading, setIsLoading] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => setIsLoading(false), 100);
+  // }, []);
+  // if (isLoading) return <p>Loading</p>;
+
   return (
     <div className="flex min-h-[400vh]">
       <div className="svg_container  sticky top-[30vh] left-0 h-full w-full overflow-hidden ">
@@ -40,6 +47,8 @@ export default function Hero() {
           viewBox="0 0 393 87"
           fill="none"
           preserveAspectRatio="xMidYMax meet"
+          strokeDashoffset={993.856}
+          strokeDasharray={993.856}
         >
           <path
             className="svgPath"

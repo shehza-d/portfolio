@@ -15,7 +15,7 @@ const data = [
     id: 6,
     li: "👀 I am interested in Programming, Cyber Security, BlockChain(smart contracts), HackerRank, Photo/Video Editing and in Bug Bounty and Hackathons",
   },
-  { id: 7, li: "A passionate Full-Stack Developer from Karachi, Pakistan" },
+  { id: 7, li: "🇵🇰 A passionate Full-Stack Developer from Karachi, Pakistan" },
 ];
 
 export default function About() {
@@ -69,7 +69,9 @@ export default function About() {
       </p>
       <ul className="font-light text-slate-800">
         {data.map((item) => (
-          <li key={item.id}>- {item.li}</li>
+          <li className="pr-4" key={item.id}>
+            - {item.li}
+          </li>
         ))}
       </ul>
 

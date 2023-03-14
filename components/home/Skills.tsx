@@ -3,7 +3,13 @@ import Image from "next/image";
 
 export default function Skills() {
   const data = [
-    { id: "1", title: "AWS", icon: "aws", alt: "amazon web service" },
+    {
+      id: "1",
+      title: "AWS",
+      icon: "aws",
+      alt: "amazon web service",
+      percent: 10,
+    },
     { id: "2", title: "AWS", icon: "aws", alt: "amazon web service" },
     { id: "3", title: "AWS", icon: "aws", alt: "amazon web service" },
     { id: "4", title: "AWS", icon: "aws", alt: "amazon web service" },
@@ -20,12 +26,6 @@ export default function Skills() {
     <section>
       <h2 className="heading_gradient self-start text-4xl font-bold">Skills</h2>
       <ul className="font-light text-slate-800">
-        <Image
-          src="https://skillicons.dev/icons?i=css,html"
-          width={75}
-          height={75}
-          alt="scfff"
-        />
         {data.map((item) => (
           <li key={item.id}>
             {item.title}

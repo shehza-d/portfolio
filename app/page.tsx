@@ -1,10 +1,12 @@
+// "use client";
 // import Image from "next/image";
+// import { useState, useEffect } from "react";
 import { About, Particle, Hero, Skills } from "@/components";
 
 export default function Home() {
   return (
     <main className={``}>
-      <Particle />
+      {/* <Particle /> */}
       <Hero />
       <About />
       <Skills />
