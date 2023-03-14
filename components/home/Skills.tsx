@@ -26,12 +26,12 @@ export default function Skills() {
           height={75}
           alt="scfff"
         />
-        {/* {data.map((item) => (
+        {data.map((item) => (
           <li key={item.id}>
             {item.title}
             <Icons icon={item.icon} alt={item.alt} />
           </li>
-        ))} */}
+        ))}
       </ul>
     </section>
   );

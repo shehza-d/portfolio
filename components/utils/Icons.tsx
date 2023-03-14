@@ -5,13 +5,13 @@ interface MyComponentProps {
   alt: string;
 }
 
-export default function Icons(props: MyComponentProps) {
+export default function Icons({ icon, alt }: MyComponentProps) {
   return (
     <Image
       src="https://skillicons.dev/icons?i=css"
       width={75}
       height={75}
-      alt={props.alt}
+      alt={alt}
     />
   );
 }
