@@ -17,6 +17,8 @@ function App() {
       <div className="myPhotoDiv">
         <img className="myPhoto" src="./img/shehzad-2.jpeg" alt="My Photo" title="SHEHZAD" />
       </div>
+
+{/*fdfd*/}
       <div className="navBarDiv">
         <nav className="nav-bar">
           <ul className="nav-ul">
