@@ -29,9 +29,9 @@ export default function About() {
         height={55}
       />
       <Image
-        className="relative z-10 my-6 w-[26.25rem] rounded-full shadow-2xl"
+        className="relative z-10 my-6 w-[26.25rem] rounded-full shadow-2xl drop-shadow-lg"
         src={dp}
-        title="SHEHZAD"
+        // title="SHEHZAD"
         alt="Shehzad in FG college uniform"
         width={1512}
         height={1512}

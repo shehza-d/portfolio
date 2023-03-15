@@ -1,5 +1,4 @@
 export default function particlesJSFun() {
-  console.log("testing particles");
   try {
     particlesJS("particles-js", {
       particles: {
@@ -83,6 +82,6 @@ export default function particlesJSFun() {
     };
     requestAnimationFrame(update);
   } catch (err) {
-    console.log("this err in particle", err);
+    // console.log("this err in particle", err);
   }
 }

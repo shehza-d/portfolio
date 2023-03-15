@@ -7,7 +7,7 @@ import {
   Hero,
   Skills,
   Contact,
-  ContactForm,
+  // ContactForm,
 } from "@/components";
 
 export default function Home() {

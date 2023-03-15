@@ -12,6 +12,13 @@ const font = Outfit({
   // variable: '--font-outfit', // optional for tailwind
 });
 
+{
+  /* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest"></link> */
+}
+
 export const metadata = {
   themeColor: "#31F711",
 
@@ -35,14 +42,11 @@ export const metadata = {
     telephone: false,
   },
   icons: {
-    icon: "/fav-icon.png",
-    shortcut: "/fav-icon.png",
-    apple: "/fav-icon.png",
-    // other: {
-    //   rel: "apple-touch-icon-precomposed",
-    //   url: "/apple-touch-icon-precomposed.png",
-    // },
+    icon: { url: "/fav/favicon.ico", type: "image/ico" },
+    shortcut: { url: "/fav/favicon.ico", type: "image/svg" },
+    apple: "/fav/apple-touch-icon.png",
   },
+
   // openGraph: {
   //   title: 'Next.js',
   //   description: 'The React Framework for the Web',
