@@ -6,5 +6,6 @@ export const projects = [
     description: "",
     techUsed: ["sf", "fd"],
     time: "",
+    // time: "",
   },
 ];
