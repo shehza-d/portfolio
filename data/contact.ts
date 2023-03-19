@@ -2,6 +2,15 @@ import { contactType } from "@/types";
 
 export const contactData: contactType[] = [
   {
+    id: "3",
+    title: "Twitter",
+    link: "https://twitter.com/shehza_d_",
+    icon: "twitter",
+    iconType: "skillIcon",
+    userName: "shehza_d_",
+    alt: "Twitter account icon",
+  },
+  {
     id: "1",
     title: "GitHub",
     link: "https://github.com/shehza-d",
@@ -19,15 +28,7 @@ export const contactData: contactType[] = [
     userName: "shehzadd",
     alt: "LinkedIn account icon",
   },
-  {
-    id: "3",
-    title: "Twitter",
-    link: "https://twitter.com/shehza_d_",
-    icon: "twitter",
-    iconType: "skillIcon",
-    userName: "shehza_d_",
-    alt: "Twitter account icon",
-  },
+
   {
     id: "4",
     title: "Instagram",

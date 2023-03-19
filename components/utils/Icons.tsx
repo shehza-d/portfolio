@@ -13,7 +13,7 @@ export default function Icons({ icon, alt, iconType }: IconProps) {
     <>
       {iconType === "public" ? (
         <Image
-          className="rounded-[20px]"
+          className="rounded-xl ml:rounded-[20px]"
           src={icon}
           width={75}
           height={75}

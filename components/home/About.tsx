@@ -37,7 +37,7 @@ export default function About() {
         height={1512}
       />
       <blockquote
-        className="rounded-full bg-opacity-90 bg-gradient-to-r from-blue-300 via-green-500 to-[#30f711cc] py-3 px-6 shadow-2xl"
+        className="rounded-full bg-opacity-90 bg-gradient-to-r from-blue-300 via-green-500 to-[#30f711cc] py-3 px-6 shadow-2xl hover:bg-gradient-to-l"
         dir="rtl"
       >
         وَأَن لَّيْسَ لِلْإِنسَـٰنِ إِلَّا مَا سَعَىٰ
@@ -74,10 +74,11 @@ export default function About() {
         ))}
       </ul>
 
-      {/*  <blockquote>
-        جو جنوں کی ره پر چل پڑے ، اُنھیں منزلوں نے پناہ دی جنہیں وسوسوں نے بہکا
-        دیا، وہ قدم قدم پر بھٹک گئے
-      </blockquote> */}
+      <blockquote dir="rtl">
+        جو جنوں کی ره پر چل پڑے ، اُنھیں منزلوں نے پناہ دی
+        <br />
+        جنہیں وسوسوں نے بہکا دیا، وہ قدم قدم پر بھٹک گئے
+      </blockquote>
     </section>
   );
 }

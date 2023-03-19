@@ -1,12 +1,12 @@
-export type skillsType = {
+export interface skillsType {
   id: string;
   title: string;
   icon: string;
   percent: number;
   additionalInfo: string;
-};
+}
 
-export type contactType = {
+export interface contactType {
   id: string;
   title: string;
   link: string;
@@ -14,4 +14,4 @@ export type contactType = {
   iconType: "skillIcon" | "public";
   userName: string;
   alt: string;
-};
+}

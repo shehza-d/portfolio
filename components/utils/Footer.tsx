@@ -5,11 +5,12 @@ export default function Footer() {
     <footer className="bg-accent py-1 text-center text-gray-800">
       <Link
         prefetch={false}
-        className="relative z-10 py-1 px-3 underline-offset-4 hover:underline"
+        // className=" hover:after:left-0 "
+        className="S_Underline relative z-10 px-1 pt-1 hover:after:w-full"
         href="https://github.com/shehza-d"
         target="_blank"
       >
-        Built and Designed by ME
+        Developed and Designed by ME
       </Link>
     </footer>
   );
