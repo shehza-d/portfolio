@@ -15,3 +15,13 @@ export interface contactType {
   userName: string;
   alt: string;
 }
+
+export interface ProjectType {
+  id: string;
+  title: string;
+  previewImg: string;
+  description: string;
+  techUsed: string[];
+  repoLink: string;
+  hostedLink: string;
+}

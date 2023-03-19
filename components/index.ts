@@ -11,6 +11,8 @@ import NavBar from "./utils/NavBar";
 import Footer from "./utils/Footer";
 import Icons from "./utils/Icons";
 import Cursor from "./utils/Cursor";
+// Project
+import Project from "./Projects/Project";
 
 export {
   Hero,
@@ -18,6 +20,7 @@ export {
   Cursor,
   Skills,
   About,
+  Project,
   Contact,
   ContactForm,
   NavBar,

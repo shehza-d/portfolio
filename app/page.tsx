@@ -6,10 +6,14 @@ import {
   Hero,
   Skills,
   Contact,
+  Project,
   // ContactForm,
 } from "@/components";
+import { projects } from "@/data";
 
 export default function Home() {
+  console.log(" rerender on server");
+
   return (
     <main className={``}>
       {/* <Cursor /> */}
@@ -17,6 +21,7 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
+      <Project data={projects} />
       <Contact />
     </main>
   );

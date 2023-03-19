@@ -66,6 +66,8 @@ export default function Cursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
   const cursorCircleRef = useRef<HTMLDivElement>(null);
 
+  console.log("rerender");
+
   return (
     <div id="cursorDiv" ref={cursorRef}>
       <div className="cursor__circle" ref={cursorCircleRef}></div>

@@ -131,6 +131,11 @@
 }
 /* =====  Scrollbar CSS end===== */
 
+/* projectCard */
+.projectCard {
+  transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+}
+/* projectCard end*/
 /* Cursor */
 #cursorDiv {
   position: fixed;
