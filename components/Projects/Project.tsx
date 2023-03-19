@@ -4,44 +4,28 @@ import { ProjectType } from "@/types";
 import { useEffect, useRef } from "react";
 
 export default function Project({ data }: { data: ProjectType[] }) {
-  const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef = useRef<HTMLDivElement>(null)!;
 
   useEffect(() => {
-    // const element = document.querySelector(".projectCard");
-
-    function handleMouseMove(e) {
+    const element2 = document.querySelector(".projectCard");
+    console.log(element2?.getBoundingClientRect());
+    const handleMouseMove = (e) => {
       // get mouse position relative to the element
       const bounds = elementRef.current.getBoundingClientRect();
       const x = e.clientX - bounds.left - bounds.width / 2;
       const y = e.clientY - bounds.top - bounds.height / 2;
 
-      // get offset from center as a percentage and tone it down a little
+      // get offset from center of div as a percentage and tone it down a little
       const offsetX = (x / bounds.width) * 45;
       const offsetY = (y / bounds.height) * 45;
 
       // get mouse position
-      //   const x = e.clientX;
-      //   const y = e.clientY;
-      //   console.log("fff");
-
-      //   const rect = element.getBoundingClientRect();
-
-      //   // find the middle
-      //   //   const middleX = window.innerWidth / 2;
-      //   //   const middleY = window.innerHeight / 2;
-      //   const middleX = rect.width / 0.5;
-      //   const middleY = rect.height / 0.5;
-
-      //   // get offset from middle as a percentage and tone it down a little
-      //   const offsetX = ((x - middleX) / middleX) * 45;
-      //   const offsetY = ((y - middleY) / middleY) * 45;
-      //   //   const offsetX = e.offsetX;
-      //   //   const offsetY = e.offsetY;
+      // find the middle
 
       // set rotation
       elementRef.current.style.setProperty("--rotateX", offsetX + "deg");
       elementRef.current.style.setProperty("--rotateY", -1 * offsetY + "deg");
-    }
+    };
 
     elementRef.current.addEventListener("mousemove", handleMouseMove);
 

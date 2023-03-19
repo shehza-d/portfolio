@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className={``}>
-      {/* <Cursor /> */}
+      <Cursor />
       {/* <Particle /> */}
       <Hero />
       <About />

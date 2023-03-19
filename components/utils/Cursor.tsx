@@ -1,26 +1,15 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
-
-interface MousePosition {
-  x: number;
-  y: number;
-}
+import { useEffect, useRef } from "react";
 
 export default function Cursor() {
-  const [mouse, setMouse] = useState<MousePosition>({ x: -100, y: -100 });
-  const [pos, setPos] = useState<MousePosition>({ x: 0, y: 0 });
-  const speed = 0.35; // between 0 and 1
+  const mouse = { x: -100, y: -100 };
+  const pos = { x: 0, y: 0 };
+  const speed = 0.2; // between 0 and 1
 
   const updateCoordinates = (e: MouseEvent) => {
-    setMouse({ x: e.clientX, y: e.clientY });
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
   };
-
-  useEffect(() => {
-    window.addEventListener("mousemove", updateCoordinates);
-    return () => {
-      window.removeEventListener("mousemove", updateCoordinates);
-    };
-  }, []);
 
   const getAngle = (diffX: number, diffY: number) =>
     (Math.atan2(diffY, diffX) * 180) / Math.PI;
@@ -36,18 +25,15 @@ export default function Cursor() {
     const diffX = Math.round(mouse.x - pos.x);
     const diffY = Math.round(mouse.y - pos.y);
 
-    const newPos = {
-      x: pos.x + diffX * speed,
-      y: pos.y + diffY * speed,
-    };
-    setPos(newPos);
+    pos.x += diffX * speed;
+    pos.y += diffY * speed;
 
     const angle = getAngle(diffX, diffY);
     const squeeze = getSqueeze(diffX, diffY);
 
     const scale = `scale(${1 + squeeze}, ${1 - squeeze})`;
     const rotate = `rotate(${angle}deg)`;
-    const translate = `translate3d(${newPos.x}px, ${newPos.y}px, 0)`;
+    const translate = `translate3d(${pos.x}px, ${pos.y}px, 0)`;
 
     if (cursorRef.current && cursorCircleRef.current) {
       cursorRef.current.style.transform = translate;
@@ -56,21 +42,23 @@ export default function Cursor() {
   };
 
   useEffect(() => {
+    window.addEventListener("mousemove", updateCoordinates);
     const loop = () => {
       updateCursor();
       requestAnimationFrame(loop);
     };
     requestAnimationFrame(loop);
-  }, [mouse, pos]);
+    return () => {
+      window.removeEventListener("mousemove", updateCoordinates);
+    };
+  }, []);
 
   const cursorRef = useRef<HTMLDivElement>(null);
   const cursorCircleRef = useRef<HTMLDivElement>(null);
 
-  console.log("rerender");
-
   return (
     <div id="cursorDiv" ref={cursorRef}>
-      <div className="cursor__circle" ref={cursorCircleRef}></div>
+      <div className="cursor_circle" ref={cursorCircleRef}></div>
     </div>
   );
 }
