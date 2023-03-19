@@ -1,6 +1,7 @@
 "use client";
 
 import { ProjectType } from "@/types";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 export default function Project({ data }: { data: ProjectType[] }) {
@@ -44,9 +45,34 @@ export default function Project({ data }: { data: ProjectType[] }) {
             <div
               ref={elementRef}
               key={item.id}
-              className="projectCard bdr h-96 w-96 rounded-3xl"
+              style={{ backgroundImage: `url('${item.previewImg}')` }}
+              className="projectCard relative z-10 flex h-[30rem] w-3/5 flex-col  items-center justify-end overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat"
             >
-              {item.title}
+              <h5 className="text_glow text-4xl text-gray-100">{item.title}</h5>
+              <div className="flex w-full flex-col items-center rounded-b-3xl  bg-gray-100/60 backdrop-blur-md">
+                <p className="mt-4">{item.description}</p>
+                <ul className="my-4 flex gap-1">
+                  {item.techUsed.map((i, j) => (
+                    <li className="rounded-full bg-accentLow px-2" key={j}>
+                      {i}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex w-full divide-x-2 divide-black">
+                  <Link
+                    className="w-1/2 bg-green-300  px-4 py-2 text-center underline-offset-4 hover:underline"
+                    href={`${item.repoLink}`}
+                  >
+                    GitHub Repo
+                  </Link>
+                  <Link
+                    className="w-1/2 bg-green-300  px-4 py-2 text-center underline-offset-4 hover:underline"
+                    href={`${item.hostedLink}`}
+                  >
+                    Hosted Link
+                  </Link>
+                </div>
+              </div>
             </div>
           );
         })}

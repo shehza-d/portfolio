@@ -19,7 +19,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        accent: "#31F711",
+        accent: "var(--accent-color)",
+        accentLow: "var(--accent-low-op)",
+
         t2: "#2e2e3f",
       },
       fontFamily: {

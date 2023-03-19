@@ -53,7 +53,11 @@
   /* isolation: isolate; */
 }
 /* glow */
-
+.text_glow {
+  text-shadow: 0 0 7px #fff, 0 0 10px #000, 0 0 21px #fff,
+    0 0 42px rgb(4, 255, 0), 0 0 82px var(--accent-color), 0 0 92px #0fa,
+    0 0 102px #0fa, 0 0 151px #0fa;
+}
 /* nav */
 .navBarDiv {
   display: flex;
@@ -134,13 +138,27 @@
 
 /* projectCard */
 .projectCard {
+  /* position: relative; */
   transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+  transform-style: preserve-3d;
+  /* -webkit-perspective: 1000; */
+}
+.projectCard > h5 {
+  /* color: red !important; */
+  /* position: relative; */
+  /* transform: translateZ(500px); */
+  /* border-radius: inherit; */
+  /* inset: 0.25rem; */
+  /* border-radius: inherit; */
+  /* background: black; */
+  z-index: 100;
+  /* filter: blur(15px); */
 }
 /* projectCard end*/
 /* Cursor */
 #cursorDiv {
   position: fixed;
-  z-index: 6;
+  z-index: 7;
   left: 0;
   top: 0;
   pointer-events: none;
