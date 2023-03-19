@@ -10,10 +10,12 @@ import ContactForm from "./contact/ContactForm";
 import NavBar from "./utils/NavBar";
 import Footer from "./utils/Footer";
 import Icons from "./utils/Icons";
+import Cursor from "./utils/Cursor";
 
 export {
   Hero,
   Particle,
+  Cursor,
   Skills,
   About,
   Contact,

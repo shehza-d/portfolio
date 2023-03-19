@@ -33,7 +33,6 @@
 }
 
 /* glow */
-
 .bg_glow::after {
   /* jisper ye lage ga uski position relative karni hogyi */
   content: "";
@@ -127,7 +126,36 @@
   /* border: 0px solid #ffffff; */
   border: none;
 }
-/* =====  Scrollbar CSS ===== */
+/* =====  Scrollbar CSS end===== */
+
+/* Cursor */
+#cursorDiv {
+  position: fixed;
+  z-index: 6;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+  mix-blend-mode: difference;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursor__circle {
+    width: 50px;
+    height: 50px;
+    margin-top: -50%;
+    margin-left: -50%;
+    border-radius: 50%;
+    /* background-color: green; */
+    border: solid 2px rgba(236, 204, 22, 0.779);
+    transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+}
+/* Cursor end*/
 
 /* =====  partical ===== */
 #particles-js {
@@ -141,4 +169,4 @@
   background-color: transparent;
   /* background-position: 50% 50%; */
 }
-/* partical */
+/* partical end*/

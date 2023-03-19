@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Outfit } from "@next/font/google";
+import { Outfit } from "next/font/google";
 // import Script from "next/script";
 import { Footer } from "@/components";
 // import { Suspense } from "react";
