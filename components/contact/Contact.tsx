@@ -31,7 +31,7 @@ export default function Contact() {
         {contactData.map((item) => {
           return (
             <Link
-              className="relative z-10 rounded-[20px] shadow-lg drop-shadow-md transition-transform duration-500 hover:scale-110"
+              className="relative z-10 rounded-[20px] shadow-lg drop-shadow-md transition-transform duration-500 hover:scale-125"
               key={item.id}
               prefetch={false}
               href={item.link}

@@ -28,6 +28,7 @@ export default function About() {
         width={665}
         height={55}
       />
+
       <Image
         className="relative z-10 my-6 w-[26.25rem] rounded-full shadow-2xl drop-shadow-lg"
         src={dp}
@@ -36,6 +37,7 @@ export default function About() {
         width={1512}
         height={1512}
       />
+
       <blockquote
         className="rounded-full bg-opacity-90 bg-gradient-to-r from-blue-300 via-green-500 to-[#30f711cc] py-3 px-6 shadow-2xl hover:bg-gradient-to-l"
         dir="rtl"
