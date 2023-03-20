@@ -1,3 +1,7 @@
+<a href="https://wakatime.com/badge/user/2b9bc0da-3bf8-4082-b333-bc011089fbbb/project/9bba22e9-ab35-4d84-aa72-c6cb787fc213"><img src="https://wakatime.com/badge/user/2b9bc0da-3bf8-4082-b333-bc011089fbbb/project/9bba22e9-ab35-4d84-aa72-c6cb787fc213.svg" alt="wakatime"></a>
+
+[![wakatime](https://wakatime.com/badge/user/2b9bc0da-3bf8-4082-b333-bc011089fbbb/project/9bba22e9-ab35-4d84-aa72-c6cb787fc213.svg)](https://wakatime.com/badge/user/2b9bc0da-3bf8-4082-b333-bc011089fbbb/project/9bba22e9-ab35-4d84-aa72-c6cb787fc213)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

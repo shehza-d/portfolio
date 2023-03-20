@@ -74,7 +74,7 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
 export default function Project({ data }: { data: ProjectType[] }) {
   return (
     <section className="my-8 mx-8">
-      <h2 className="heading gradient">Projects</h2>
+      <h2 className="heading gradient inline-block">Projects</h2>
       <div className="flex flex-col gap-8">
         {data?.map((item) => {
           return <ProjectCard data={item} key={item.id} />;
