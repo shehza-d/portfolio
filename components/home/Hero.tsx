@@ -1,6 +1,6 @@
 "use client";
-// import nameSvg from '../../public/Vector.svg'
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 export default function Hero() {
   useEffect(() => {
@@ -32,16 +32,13 @@ export default function Hero() {
     };
   }, []);
 
-  // const [isLoading, setIsLoading] = useState(true);
-
-  // useEffect(() => {
-  //   setTimeout(() => setIsLoading(false), 100);
-  // }, []);
-  // if (isLoading) return <p>Loading</p>;
-
   return (
     <div className="flex min-h-[400vh]">
-      <div className="svg_container  sticky top-[30vh] left-0 h-full w-full overflow-hidden ">
+      <div className="absolute top-1 left-1/2 flex flex-col items-center text-lg font-extralight">
+        SCROLL
+        <MdOutlineKeyboardDoubleArrowDown className="animate-bounce text-3xl" />
+      </div>
+      <div className="svg_container  sticky top-[30vh] left-0 h-full w-full overflow-hidden">
         <svg
           className="stroke-accent stroke-2"
           viewBox="0 0 393 87"

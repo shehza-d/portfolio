@@ -1,5 +1,5 @@
-import { projects } from "./projects";
+import { allProjects, topProjects } from "./projects";
 import { skills } from "./skills";
 import { contactData } from "./contact";
 
-export { projects, skills, contactData };
+export { allProjects, topProjects, skills, contactData };

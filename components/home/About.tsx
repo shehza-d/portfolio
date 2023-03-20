@@ -1,6 +1,13 @@
 import Image from "next/image";
 import typingSvg from "../../public/typingSkills.svg";
 import dp from "../../public/dp.jpeg";
+import localFont from "next/font/local";
+
+const urduFont = localFont({
+  src: "../../public/urduFont/Jameel-Noori-Nastaleeq-Kasheeda.ttf",
+  preload: false,
+  // display: "swap",
+});
 
 const data = [
   { id: 1, li: "🏆 Currently learning Web 3 Development" },
@@ -42,7 +49,9 @@ export default function About() {
         className="rounded-full bg-opacity-90 bg-gradient-to-r from-blue-300 via-green-500 to-[#30f711cc] py-3 px-6 shadow-2xl hover:bg-gradient-to-l"
         dir="rtl"
       >
-        وَأَن لَّيْسَ لِلْإِنسَـٰنِ إِلَّا مَا سَعَىٰ
+        <span className={`text-lg`}>
+          وَأَن لَّيْسَ لِلْإِنسَـٰنِ إِلَّا مَا سَعَىٰ
+        </span>
         <br />
         💚Man gets whatever he strives for
       </blockquote>
@@ -76,7 +85,10 @@ export default function About() {
         ))}
       </ul>
 
-      <blockquote dir="rtl">
+      <blockquote
+        dir="rtl"
+        className={`${urduFont.className} text-center text-2xl`}
+      >
         جو جنوں کی ره پر چل پڑے ، اُنھیں منزلوں نے پناہ دی
         <br />
         جنہیں وسوسوں نے بہکا دیا، وہ قدم قدم پر بھٹک گئے

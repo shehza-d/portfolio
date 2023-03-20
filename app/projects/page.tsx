@@ -1,3 +1,6 @@
+import { Project } from "@/components";
+import { allProjects } from "@/data";
+
 export default function Page() {
-  return <div className="">Page of project</div>;
+  return <Project data={allProjects} />;
 }
