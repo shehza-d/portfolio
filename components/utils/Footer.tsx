@@ -10,7 +10,7 @@ export default function Footer() {
         href="https://github.com/shehza-d"
         target="_blank"
       >
-        Developed and Designed by ME
+        Ⓒ Developed and Designed by ME
       </Link>
     </footer>
   );

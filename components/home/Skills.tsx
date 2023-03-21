@@ -12,7 +12,7 @@ import { skills } from "@/data";
 export default function Skills() {
   return (
     <section className="my-8 mx-8">
-      <h2 className="gradient heading self-start">Languages and Tools ⚙</h2>
+      <h2 className="gradient heading inline-block">Languages and Tools ⚙</h2>
       <ul className="grid grid-cols-1 justify-items-center gap-4 font-light text-slate-800 md:grid-cols-2">
         {skills.map((item) => (
           <li
