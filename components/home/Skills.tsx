@@ -11,7 +11,7 @@ export default function Skills() {
             className="flex w-5/6 items-center justify-between rounded-[20px] shadow-lg"
             key={item.id}
           >
-            <h5 className="pl-8 text-2xl font-medium capitalize">
+            <h5 className="pl-8 text-2xl font-medium capitalize dark:text-slate-100">
               {item.title}
             </h5>
             <Icons icon={item.icon} alt={item.additionalInfo} />

@@ -6,7 +6,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: "class",
+  // darkMode: "class",
   theme: {
     screens: {
       sm: "320px",

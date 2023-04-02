@@ -3,11 +3,11 @@ import typingSvg from "../../public/typingSkills.svg";
 import dp from "../../public/dp.jpeg";
 import localFont from "next/font/local";
 
-// const urduFont = localFont({
-//   src: "../../public/urduFont/Jameel-Noori-Nastaleeq-Kasheeda.ttf",
-//   preload: false,
-//   // display: "swap",
-// });
+const urduFont = localFont({
+  src: "../../public/urduFont/Jameel-Noori-Nastaleeq-Kasheeda.ttf",
+  preload: false,
+  // display: "swap",
+});
 
 const data = [
   { id: 1, li: "🏆 Currently learning Web 3 Development" },
@@ -17,7 +17,7 @@ const data = [
   },
   { id: 3, li: "💻 Dedicated to Work and seeking Experiences" },
   { id: 4, li: "⛳️ MY 2023 Goal is Mastering NEXT JS" },
-  { id: 5, li: "🌱 Learning from Saylani SMIT and PIAIC " },
+  { id: 5, li: "🌱 Learning from Saylani SMIT and PIAIC" },
   {
     id: 6,
     li: "👀 I am interested in Programming, Cyber Security, BlockChain(smart contracts), LeetCode, Photo/Video Editing and in Bug Bounty and Hackathons",
@@ -62,7 +62,7 @@ export default function About() {
       <h1 className="inline text-[1px] opacity-0">Making Code Beneficial</h1>
       <h2 className="heading gradient self-start">Introduction</h2>
 
-      <p className="text-justify text-lg font-light text-slate-800 lg:text-xl">
+      <p className="text-justify text-lg font-light text-slate-800 dark:text-slate-200 lg:text-xl">
         A young and enthusiastic individual{" "}
         <span className="heading_gradient inline">Making Code Beneficial</span>{" "}
         who also likes to Develop, Design, Innovate, Experiment and take up new
@@ -77,7 +77,7 @@ export default function About() {
         progressive organization offering ample opportunities and diversified
         exposure where he could enhance his experience.
       </p>
-      <ul className="m-4 font-light text-slate-800">
+      <ul className="m-4 font-light text-slate-800 dark:text-slate-200">
         {data.map((item) => (
           <li className="pl-4 text-justify" key={item.id}>
             - {item.li}
@@ -87,7 +87,7 @@ export default function About() {
 
       <blockquote
         dir="rtl"
-        // className={`${urduFont.className} text-center text-2xl`}
+        className={`${urduFont.className} text-center text-2xl`}
       >
         جو جنوں کی ره پر چل پڑے ، اُنھیں منزلوں نے پناہ دی
         <br />

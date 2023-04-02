@@ -19,7 +19,7 @@ body {
   @apply pt-6 pb-4 text-4xl font-bold;
 }
 .S_Underline {
-  @apply after:absolute after:left-0 after:bottom-0 after:h-[0.1875rem] after:w-0 after:bg-slate-800 after:transition-all after:duration-500 after:content-[''];
+  @apply after:absolute after:left-0 after:-bottom-1 after:h-[0.1875rem] after:w-0 after:bg-slate-800 after:transition-all after:duration-500 after:content-[''];
 }
 .center {
   display: flex;
