@@ -7,7 +7,6 @@ import {
   Skills,
   Contact,
   Project,
-  // ContactForm,
 } from "@/components";
 import { topProjects } from "@/data";
 import Link from "next/link";
@@ -16,7 +15,7 @@ export default function Home() {
   console.log(" rerender on server");
 
   return (
-    <main className={``}>
+    <main className={`dark`}>
       {/* <Cursor /> */}
       {/* <Particle /> */}
       <Hero />

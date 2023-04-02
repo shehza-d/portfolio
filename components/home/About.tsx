@@ -3,11 +3,11 @@ import typingSvg from "../../public/typingSkills.svg";
 import dp from "../../public/dp.jpeg";
 import localFont from "next/font/local";
 
-const urduFont = localFont({
-  src: "../../public/urduFont/Jameel-Noori-Nastaleeq-Kasheeda.ttf",
-  preload: false,
-  // display: "swap",
-});
+// const urduFont = localFont({
+//   src: "../../public/urduFont/Jameel-Noori-Nastaleeq-Kasheeda.ttf",
+//   preload: false,
+//   // display: "swap",
+// });
 
 const data = [
   { id: 1, li: "🏆 Currently learning Web 3 Development" },
@@ -20,7 +20,7 @@ const data = [
   { id: 5, li: "🌱 Learning from Saylani SMIT and PIAIC " },
   {
     id: 6,
-    li: "👀 I am interested in Programming, Cyber Security, BlockChain(smart contracts), HackerRank, Photo/Video Editing and in Bug Bounty and Hackathons",
+    li: "👀 I am interested in Programming, Cyber Security, BlockChain(smart contracts), LeetCode, Photo/Video Editing and in Bug Bounty and Hackathons",
   },
   { id: 7, li: "🇵🇰 A passionate Full-Stack Developer from Karachi, Pakistan" },
 ];
@@ -87,7 +87,7 @@ export default function About() {
 
       <blockquote
         dir="rtl"
-        className={`${urduFont.className} text-center text-2xl`}
+        // className={`${urduFont.className} text-center text-2xl`}
       >
         جو جنوں کی ره پر چل پڑے ، اُنھیں منزلوں نے پناہ دی
         <br />

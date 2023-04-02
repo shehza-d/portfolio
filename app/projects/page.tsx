@@ -1,6 +1,11 @@
-import { Project } from "@/components";
+import { Cursor, Project } from "@/components";
 import { allProjects } from "@/data";
 
 export default function Page() {
-  return <Project data={allProjects} />;
+  return (
+    <>
+      <Cursor />
+      <Project data={allProjects} />;
+    </>
+  );
 }

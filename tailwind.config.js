@@ -24,9 +24,9 @@ module.exports = {
 
         t2: "#2e2e3f",
       },
-      fontFamily: {
-        out: ["var(--font-outfit)"],
-      },
+      // fontFamily: {
+      //   out: ["var(--font-outfit)"],
+      // },
     },
   },
   plugins: [],

@@ -1,14 +1,6 @@
 import { Icons } from "@/components";
 import { skills } from "@/data";
 
-// export async function generateStaticParams() {
-//   const posts = await fetch('https://.../posts').then((res) => res.json());
-
-//   return posts.map((post) => ({
-//     slug: post.slug,
-//   }));
-// }
-
 export default function Skills() {
   return (
     <section className="my-8 mx-8">

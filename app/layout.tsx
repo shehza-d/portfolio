@@ -1,9 +1,6 @@
 import "./globals.css";
-import { Outfit } from "next/font/google";
-// import Script from "next/script";
 import { Footer } from "@/components";
-// import { Suspense } from "react";
-// import Loading from "./loading";
+import { Outfit } from "next/font/google";
 
 const font = Outfit({
   subsets: ["latin"],
@@ -70,14 +67,15 @@ export const metadata = {
   //   type: 'website',
   // },
 };
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  console.log("testing layouts");
+
   return (
-    <html lang="en" style={font.style}>
+    <html lang="en" className={`${font.className} `}>
       <body className="grid min-h-screen grid-rows-[1fr,auto]">
         {children}
         <Footer />
