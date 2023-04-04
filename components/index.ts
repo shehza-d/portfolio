@@ -13,8 +13,11 @@ import Icons from "./utils/Icons";
 import Cursor from "./utils/Cursor";
 // Project
 import Project from "./Projects/Project";
+// Oberser
+import Observer from "./utils/Observer";
 
 export {
+  Observer,
   Hero,
   Particle,
   Cursor,

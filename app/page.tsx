@@ -1,4 +1,3 @@
-// "use client";
 import {
   Cursor,
   Particle,
@@ -7,6 +6,7 @@ import {
   Skills,
   Contact,
   Project,
+  Observer,
 } from "@/components";
 import { topProjects } from "@/data";
 import Link from "next/link";
@@ -15,9 +15,10 @@ export default function Home() {
   console.log(" rerender on server");
 
   return (
-    <main className={`dark:bg-slate-900`}>
+    <main className={`dark:bg-[#0A192F]`}>
       <Cursor />
-      <Particle />
+      {/* <Particle /> */}
+      <Observer />
       <Hero />
       <About />
       <Skills />

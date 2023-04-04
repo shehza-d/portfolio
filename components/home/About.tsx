@@ -37,7 +37,7 @@ export default function About() {
       />
 
       <Image
-        className="relative z-10 my-6 w-[26.25rem] rounded-full shadow-2xl drop-shadow-lg"
+        className="profilePic relative z-10 my-6 w-[26.25rem] rounded-full shadow-2xl drop-shadow-lg"
         src={dp}
         // title="SHEHZAD"
         alt="Shehzad in FG college uniform"
