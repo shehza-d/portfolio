@@ -18,10 +18,10 @@ export default function Home() {
     <main className={`dark:bg-[#0A192F]`}>
       {/* <Cursor /> */}
       {/* <Particle /> */}
-      <Observer />
+      {/* <Observer /> */}
       {/* <Hero /> */}
       <About />
-      <Skills />
+      {/* <Skills /> */}
       {/* <Project data={topProjects} /> */}
 
       <div className="flex justify-center">

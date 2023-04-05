@@ -73,7 +73,7 @@ export default function Observer() {
           }
         });
       },
-      { rootMargin: "-50px" }
+      { rootMargin: "-10px" }
     );
 
     // Observe each element

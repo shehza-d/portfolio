@@ -86,7 +86,7 @@ body {
 
 /* skills */
 .skillOdd {
-  animation: skillOdd 1000ms ease-out 0s 1 forwards;
+  animation: skillOdd 1000ms ease-out 0ms 1 forwards;
 }
 @keyframes skillOdd {
   0% {
@@ -97,7 +97,7 @@ body {
   }
 }
 .skillEven {
-  animation: skillEven 1000ms ease-out 0s 1 forwards;
+  animation: skillEven 1000ms ease-out 0ms 1 forwards;
 }
 @keyframes skillEven {
   0% {
