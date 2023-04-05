@@ -4,32 +4,67 @@ import { useEffect } from "react";
 export default function Observer() {
   useEffect(() => {
     const elements = document.querySelectorAll(".animation_triggering_class");
-    const profilePic = document.querySelector(".profilePic");
+    const leftAni = document.querySelectorAll(".animation_triggering_left");
+    const profilePic = document.querySelector(".profilePic")!;
 
-    // Create an intersection observer
-    const observer = new IntersectionObserver(
+    /* This is for skills Div */
+    // // Create an intersection observer
+    // const observer = new IntersectionObserver(
+    //   /* This is for skills Div END */
+    //   (entries) => {
+    //     entries.forEach((entry) =>
+    //       // Add the "animate" class when the element is in the viewport
+    //       entry.target.classList.toggle("animate", entry.isIntersecting)
+    //     );
+    //   },
+    //   {
+    //     threshold: 0.9, // when to apply toggle based on percentage
+    //     // rootMargin: "-100px", // vh reduced by 100 px
+    //   }
+    // );
+
+    // // Observe each element
+    // elements.forEach((element) => {
+    //   observer.observe(element);
+    // });
+    /* This is for skills Div END */
+
+    /* This is for ProfilePic */
+    const observerForPic = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          // Add the "animate" class when the element is in the viewport
-          entry.target.classList.toggle("animatefff", entry.isIntersecting);
-        });
+        entries[0].target.classList.toggle(
+          "animatePic",
+          entries[0].isIntersecting
+        );
       },
       {
-        threshold: 0.9, // when to apply toggle based on percentage
-        // rootMargin: "-100px", // vh reduced by 100 px
+        rootMargin: "0px",
+        threshold: 0.4,
       }
+    );
+    observerForPic.observe(profilePic);
+    /* This is for ProfilePic END */
+
+    /* This is for skills Div */
+    const observerLeft = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) =>
+          entry.target.classList.toggle("animateLeft", entry.isIntersecting)
+        );
+      },
+      { threshold: 0.9 }
     );
 
     // Observe each element
-    elements.forEach((element) => {
-      observer.observe(element);
+    leftAni.forEach((element) => {
+      observerLeft.observe(element);
     });
-// profilePic.observer.
-
-
+    /* This is for skills Div END */
 
     return () => {
-      observer.disconnect();
+      // leftAni.forEach((i)=>i.dis)
+      //   observer.disconnect();
+      observerLeft.disconnect();
     };
   }, []);
 

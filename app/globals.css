@@ -54,6 +54,43 @@ body {
   border: 2px solid yellow;
 }
 
+/* ANIMATIONS */
+/* 
+               name   duration  timing func   delay   iteration count   fill mode
+    animation: crazy  4s        ease-in-out   0.5s    12                backwards;
+crazy: Animation name
+4s: Duration
+ease-in-out: Timing function
+0.5s: Delay
+12: Iteration count
+backwards: Fill mode */
+
+.animatePic {
+  animation: scale 1000ms ease-in-out 0s 1 forwards;
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animateLeft {
+  /* animation: leftAni 1000ms ease-in-out 500ms 1 forwards; */
+  animation-iteration-count: 1;
+}
+@keyframes leftAni {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* ANIMATIONS END*/
+
 /* glow */
 .bg_glow::after {
   /* jisper ye lage ga uski position relative karni hogyi */
