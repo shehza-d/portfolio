@@ -5,6 +5,7 @@ export default function Observer() {
   useEffect(() => {
     const elements = document.querySelectorAll(".animation_triggering_class");
     const leftAni = document.querySelectorAll(".animation_triggering_left");
+    const skills = document.querySelectorAll(".animation_skillDivs");
     const profilePic = document.querySelector(".profilePic")!;
 
     /* This is for skills Div */
@@ -45,7 +46,7 @@ export default function Observer() {
     observerForPic.observe(profilePic);
     /* This is for ProfilePic END */
 
-    /* This is for skills Div */
+    /* This is for left ani */
     const observerLeft = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) =>
@@ -59,11 +60,31 @@ export default function Observer() {
     leftAni.forEach((element) => {
       observerLeft.observe(element);
     });
-    /* This is for skills Div END */
+    /* This is for left ani END */
+
+    /* This is for left ani */
+    const observerSkills = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, i) => {
+          if (i % 2 === 1) {
+            entry.target.classList.toggle("skillOdd", entry.isIntersecting);
+          } else if (i % 2 === 0) {
+            entry.target.classList.toggle("skillEven", entry.isIntersecting);
+          }
+        });
+      },
+      { rootMargin: "-50px" }
+    );
+
+    // Observe each element
+    skills.forEach((element) => {
+      observerSkills.observe(element);
+    });
+    /* This is for left ani END */
 
     return () => {
-      // leftAni.forEach((i)=>i.dis)
       //   observer.disconnect();
+      observerForPic.disconnect();
       observerLeft.disconnect();
     };
   }, []);

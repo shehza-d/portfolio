@@ -57,13 +57,8 @@ body {
 /* ANIMATIONS */
 /* 
                name   duration  timing func   delay   iteration count   fill mode
-    animation: crazy  4s        ease-in-out   0.5s    12                backwards;
-crazy: Animation name
-4s: Duration
-ease-in-out: Timing function
-0.5s: Delay
-12: Iteration count
-backwards: Fill mode */
+    animation: crazy     4s     ease-in-out    0.5s        12            backwards;
+*/
 
 .animatePic {
   animation: scale 1000ms ease-in-out 0s 1 forwards;
@@ -83,6 +78,30 @@ backwards: Fill mode */
 @keyframes leftAni {
   0% {
     transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* skills */
+.skillOdd {
+  animation: skillOdd 1000ms ease-out 0s 1 forwards;
+}
+@keyframes skillOdd {
+  0% {
+    transform: translateX(-62%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.skillEven {
+  animation: skillEven 1000ms ease-out 0s 1 forwards;
+}
+@keyframes skillEven {
+  0% {
+    transform: translateX(62%);
   }
   100% {
     transform: translateX(0px);
