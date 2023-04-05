@@ -75,7 +75,6 @@ export default function Observer() {
       },
       { rootMargin: "-10px" }
     );
-
     // Observe each element
     skills.forEach((element) => {
       observerSkills.observe(element);
