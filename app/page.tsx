@@ -16,8 +16,8 @@ export default function Home() {
 
   return (
     <main className={`dark:bg-[#0A192F]`}>
-      <Cursor />
-      <Particle />
+      {/* <Cursor /> */}
+      {/* <Particle /> */}
       <Observer />
       <Hero />
       <About />
