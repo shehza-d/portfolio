@@ -27,7 +27,7 @@ const data = [
 
 export default function About() {
   return (
-    <section className="my-8 mx-8 mt-16 flex flex-col items-center">
+    <section className="my-8 mt-16 flex flex-col items-center">
       <Image
         className=""
         src={typingSvg}
@@ -37,7 +37,7 @@ export default function About() {
       />
 
       <Image
-        className="profilePic relative z-10 my-6 w-[26.25rem] scale-50 rounded-full shadow-2xl drop-shadow-lg"
+        className="profilePic relative z-10 my-6 w-96 md:w-[26.25rem] scale-50 rounded-full shadow-2xl drop-shadow-lg"
         src={dp}
         // title="SHEHZAD"
         alt="Shehzad in FG college uniform"

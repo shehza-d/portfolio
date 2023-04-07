@@ -9,7 +9,7 @@ export default function Contact() {
   // };
 
   return (
-    <section className="my-8 mx-8">
+    <section className="my-8">
       <h2 className="heading gradient inline-block">Connect with me🔗</h2>
 
       <div className="flex flex-wrap justify-evenly pt-4">
@@ -35,7 +35,7 @@ export default function Contact() {
         {contactData.map((item) => {
           return (
             <Link
-              className="relative z-10 rounded-[20px] shadow-xl drop-shadow-md transition-transform duration-500 hover:scale-125"
+              className="relative z-10 h-14 w-14 rounded-[12px]  shadow-xl drop-shadow-md transition-transform duration-500 hover:scale-125"
               key={item.id}
               prefetch={false}
               href={item.link}
@@ -50,9 +50,9 @@ export default function Contact() {
         <label className="text-2xl font-semibold" htmlFor="newsLetter">
           News Letter
         </label>
-        <div className="relative z-10 flex items-center">
+        <div className="mt-6 relative z-10 flex items-center">
           <input
-            className={`my-6 h-16 flex-1 rounded-l-lg border-0 p-4 text-2xl text-gray-800 shadow-xl outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:text-gray-100 sm:text-sm sm:leading-6`}
+            className={` h-16 flex-1 rounded-tl-lg border-0 p-3 ml:p-4 text-2xl text-gray-800  outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:text-gray-100 sm:leading-6`}
             type="email"
             name="newsLetter"
             autoComplete="email"
@@ -60,13 +60,16 @@ export default function Contact() {
             placeholder="Your Email here"
           />
           <button
-            className="h-16 rounded-r-lg bg-accent py-2 px-6 text-lg font-semibold text-slate-50 shadow-xl hover:opacity-80 active:bg-accentLow"
+            className="h-16 rounded-tr-lg bg-accent px-2 ml:px-6 text-base ml:text-lg font-semibold text-slate-50  hover:opacity-80 active:bg-accentLow"
             type="submit"
           >
             Subscribe
           </button>
         </div>
+        <textarea
+          className="mb-6 h-56 flex-1 rounded-b-lg  w-full border-0 p-3 ml:p-4 text-2xl text-gray-800 shadow-2xl outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:text-gray-100 sm:leading-6"
+          name="message" id="formMsg" placeholder="Your Message" cols={50}></textarea>
       </form>
-    </section>
+    </section >
   );
 }
