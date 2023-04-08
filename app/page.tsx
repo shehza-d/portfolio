@@ -17,8 +17,8 @@ export default function Home() {
 
   return (
     <main className={`dark:bg-[#0A192F]`}>
-      <Cursor />
-      <Particle />
+      {/* <Cursor /> */}
+      {/* <Particle /> */}
       <Observer />
       <Hero />
 
@@ -26,7 +26,6 @@ export default function Home() {
         <About />
         <Skills />
         <Project data={topProjects} />
-
         <div className="flex justify-center">
           <Link
             className="relative z-10 rounded-full bg-gradient-to-r from-cyan-300 via-green-400 to-[#30f711cc] py-3 px-6 shadow-xl transition-transform duration-300 hover:scale-110 hover:bg-gradient-to-l"
@@ -37,7 +36,7 @@ export default function Home() {
             See more Projects
           </Link>
         </div>
-        <Contact />
+        {/* <Contact /> */}
       </div>
 
     </main>

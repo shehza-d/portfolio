@@ -15,9 +15,11 @@ import Cursor from "./utils/Cursor";
 import Project from "./Projects/Project";
 // Oberser
 import Observer from "./utils/Observer";
+import ObserverProject from "./utils/OberverProject";
 
 export {
   Observer,
+  ObserverProject,
   Hero,
   Particle,
   Cursor,

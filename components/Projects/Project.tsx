@@ -38,7 +38,7 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
     <div
       ref={elementRef}
       style={{ backgroundImage: `url('${data.previewImg}')` }}
-      className="projectCard relative z-10 flex h-[30rem] w-3/5 flex-col items-center justify-end overflow-hidden  rounded-3xl bg-cover bg-center bg-no-repeat shadow-md drop-shadow-md odd:self-end"
+      className="projectCard opacity-5 md:odd:translate-x-[62%] translate-x-[62%] md:even:translate-x-[-62%] relative z-10 flex h-[30rem] min-w-3xl flex-col items-center justify-end overflow-hidden  rounded-3xl bg-cover bg-center bg-no-repeat shadow-md drop-shadow-md odd:self-end"
     >
       <h5 className="text_glow text-4xl text-gray-100">{data.title}</h5>
       <div className="flex w-full flex-col items-center rounded-b-3xl  bg-gray-100/60 backdrop-blur-md">

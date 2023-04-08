@@ -71,16 +71,12 @@ body {
     transform: scale(1);
   }
 }
-.animateLeft {
-  /* animation: leftAni 1000ms ease-in-out 500ms 1 forwards; */
-  animation-iteration-count: 1;
+.animateFade {
+  animation: fadeAni 800ms ease-in-out 0ms 1 forwards;
 }
-@keyframes leftAni {
-  0% {
-    transform: translateX(50%);
-  }
+@keyframes fadeAni {
   100% {
-    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
@@ -92,8 +88,12 @@ body {
   0% {
     transform: translateX(-62%);
   }
+  40% {
+    opacity: 1;
+  }
   100% {
     transform: translateX(0px);
+    opacity: 1;
   }
 }
 .skillEven {
@@ -103,8 +103,12 @@ body {
   0% {
     transform: translateX(62%);
   }
+  40% {
+    opacity: 1;
+  }
   100% {
     transform: translateX(0px);
+    opacity: 1;
   }
 }
 

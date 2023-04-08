@@ -9,13 +9,6 @@ export const skills: skillsType[] = [
     additionalInfo: "Next js 13 by vercel",
   },
   {
-    id: "100",
-    title: "NEXT JS",
-    icon: "nextjs",
-    percent: 70,
-    additionalInfo: "Next js 13 by vercel",
-  },
-  {
     id: "3",
     title: "tailwind CSS",
     icon: "tailwind",
@@ -188,5 +181,12 @@ export const skills: skillsType[] = [
     icon: "solidity",
     percent: 10,
     additionalInfo: "solidity language for Smart Contract",
+  },
+  {
+    id: "100",
+    title: "NEXT JS",
+    icon: "nextjs",
+    percent: 70,
+    additionalInfo: "Next js 13 by vercel",
   },
 ];

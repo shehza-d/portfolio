@@ -4,9 +4,10 @@ import { useEffect } from "react";
 export default function Observer() {
   useEffect(() => {
     const elements = document.querySelectorAll(".animation_triggering_class");
-    const leftAni = document.querySelectorAll(".animation_triggering_left");
+    const fadeAni = document.querySelectorAll(".animation_triggering_fade");
     const skills = document.querySelectorAll(".animation_skillDivs");
     const profilePic = document.querySelector(".profilePic")!;
+    // const projectCard = document.querySelectorAll(".projectCard")!;
 
     /* This is for skills Div */
     // // Create an intersection observer
@@ -46,27 +47,30 @@ export default function Observer() {
     observerForPic.observe(profilePic);
     /* This is for ProfilePic END */
 
-    /* This is for left ani */
-    const observerLeft = new IntersectionObserver(
+
+    /* This is for fade ani */
+    const observerFade = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) =>
-          entry.target.classList.toggle("animateLeft", entry.isIntersecting)
+          entry.target.classList.toggle("animateFade", entry.isIntersecting)
         );
       },
-      { threshold: 0.9 }
+      {
+        threshold: 0.3,
+      }
     );
-
-    // Observe each element
-    leftAni.forEach((element) => {
-      observerLeft.observe(element);
+    fadeAni.forEach((element) => {
+      observerFade.observe(element);
     });
-    /* This is for left ani END */
+    /* This is for fade ani END */
 
-    /* This is for left ani */
+    /* This is for skills ani */
     const observerSkills = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry, i) => {
-          if (i % 2 === 1) {
+          if (window.innerWidth < 650) {
+            entry.target.classList.toggle("skillEven", entry.isIntersecting);
+          } else if (i % 2 === 1) {
             entry.target.classList.toggle("skillOdd", entry.isIntersecting);
           } else if (i % 2 === 0) {
             entry.target.classList.toggle("skillEven", entry.isIntersecting);
@@ -75,16 +79,16 @@ export default function Observer() {
       },
       { rootMargin: "-10px" }
     );
-    // Observe each element
     skills.forEach((element) => {
       observerSkills.observe(element);
     });
-    /* This is for left ani END */
+    /* This is for skills ani END */
+
 
     return () => {
       //   observer.disconnect();
       observerForPic.disconnect();
-      observerLeft.disconnect();
+      observerFade.disconnect();
     };
   }, []);
 
