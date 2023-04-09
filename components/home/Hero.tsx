@@ -54,7 +54,10 @@ export default function Hero() {
         <svg
           preserveAspectRatio="xMidYMax meet"
           className="stroke-accent stroke-[6]"
-          fill="none" viewBox="0 0 804 209" >
+          fill="none" viewBox="0 0 804 209"
+          strokeDashoffset={3340.22}
+          strokeDasharray={3340.22}
+        >
           <g filter="url(#filter0_d_3_41)">
             <path
               className="svgPath"
@@ -83,8 +86,8 @@ export default function Hero() {
         {/* <svg
           className="stroke-accent stroke-[6]"
           preserveAspectRatio="xMidYMax meet"
-          strokeDashoffset={3564.45}
-          strokeDasharray={3564.45}
+          strokeDashoffset={3340.22}
+          strokeDasharray={3340.22}
           viewBox="0 0 1048 202" fill="none"
         >
           <path

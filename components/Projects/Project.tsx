@@ -38,14 +38,14 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
     <div
       ref={elementRef}
       style={{ backgroundImage: `url('${data.previewImg}')` }}
-      className="projectCard opacity-5 md:odd:translate-x-[62%] translate-x-[62%] md:even:translate-x-[-62%] relative z-10 flex h-[30rem] min-w-3xl flex-col items-center justify-end overflow-hidden  rounded-3xl bg-cover bg-center bg-no-repeat shadow-md drop-shadow-md odd:self-end"
+      className="projectCard overflow-hidden opacity-5 md:odd:translate-x-[62%] translate-x-[62%] md:even:translate-x-[-62%] relative z-10 flex h-[30rem] lg:w-[54rem] w-full ml:w-[35rem]  md:w-[44rem] flex-col items-center justify-end rounded-3xl bg-cover bg-center bg-no-repeat shadow-md drop-shadow-md odd:self-end"
     >
       <h5 className="text_glow text-4xl text-gray-100">{data.title}</h5>
       <div className="flex w-full flex-col items-center rounded-b-3xl  bg-gray-100/60 backdrop-blur-md">
         <p className="mt-4">{data.description}</p>
-        <ul className="my-4 flex gap-1">
+        <ul className="my-4 flex gap-1 flex-wrap">
           {data.techUsed.map((i, j) => (
-            <li className="rounded-full bg-accentLow px-2" key={j}>
+            <li className="rounded-full bg-accentLow py-1 px-3" key={j}>
               {i}
             </li>
           ))}
@@ -54,6 +54,7 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
           <Link
             className="flex w-1/2 items-center justify-center bg-accentLow px-4 py-2 text-center underline-offset-4 hover:underline"
             href={`${data.repoLink}`}
+            target="_blank"
           >
             GitHub Repo
             <FaGithub className="pl-2 text-3xl" />
@@ -61,6 +62,7 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
           <Link
             className="flex w-1/2 items-center justify-center bg-accentLow px-4 py-2 text-center underline-offset-4 hover:underline"
             href={`${data.hostedLink}`}
+            target="_blank"
           >
             Hosted Link
             <FaExternalLinkAlt className="pl-2 text-2xl" />
@@ -74,8 +76,7 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
 export default function Project({ data }: { data: ProjectType[] }) {
   return (
     <section className="my-8">
-      <h2 className="heading gradient inline-block">Projects</h2>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col overflow-hidden mx-4 gap-8">
         {data?.map((item) => {
           return <ProjectCard data={item} key={item.id} />;
         })}
