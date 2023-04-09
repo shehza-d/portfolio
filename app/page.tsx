@@ -21,7 +21,7 @@ export default function Home() {
       <Cursor />
       {/* <Particle /> */}
       <Observer />
-      <Hero />
+      {/* <Hero /> */}
 
       <div className="mx-6 mm:mx-10 md:mx-16 lg:mx-20 xl:mx-28">
         <About />
