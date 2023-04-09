@@ -53,7 +53,7 @@ export default function Contact() {
         </label>
         <div className="mt-6 relative z-10 flex items-center">
           <input
-            className={` h-16 flex-1 rounded-tl-lg border-0 p-3 ml:p-4 text-2xl text-gray-800  outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:text-gray-100 sm:leading-6`}
+            className={` h-16 flex-1 w-full rounded-tl-lg border-0 p-3 ml:p-4 text-2xl text-gray-800  outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:text-gray-100 sm:leading-6`}
             type="email"
             name="newsLetter"
             autoComplete="email"

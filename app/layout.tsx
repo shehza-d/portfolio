@@ -72,11 +72,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log("testing layouts");
 
   return (
     <html lang="en" className={`${font.className} `}>
-      <body className="grid min-h-screen grid-rows-[1fr,auto]">
+      <body className="  grid-rows-[1fr,auto]">
         {children}
         <Footer />
       </body>
