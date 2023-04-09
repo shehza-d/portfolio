@@ -67,7 +67,7 @@ export default function Contact() {
           </button>
         </div>
         <textarea
-          className="mb-6 h-56 flex-1 rounded-b-lg  w-full border-0 p-3 ml:p-4 text-2xl text-gray-800 shadow-2xl outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:text-gray-100 sm:leading-6"
+          className="mb-6 h-56 flex-1 relative z-10 rounded-b-lg  w-full border-0 p-3 ml:p-4 text-2xl text-gray-800 shadow-2xl outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:text-gray-100 sm:leading-6"
           name="message" id="formMsg" placeholder="Your Message" cols={50}></textarea>
       </form>
     </section >

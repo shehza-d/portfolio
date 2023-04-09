@@ -38,7 +38,7 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
     <div
       ref={elementRef}
       style={{ backgroundImage: `url('${data.previewImg}')` }}
-      className="projectCard overflow-hidden opacity-5 md:odd:translate-x-[62%] translate-x-[62%] md:even:translate-x-[-62%] relative z-10 flex h-[30rem] lg:w-[54rem] w-full ml:w-[35rem]  md:w-[44rem] flex-col items-center justify-end rounded-3xl bg-cover bg-center bg-no-repeat shadow-md drop-shadow-md odd:self-end"
+      className="projectCard overflow-hidden opacity-5 md:odd:translate-x-[62%] translate-x-[62%] md:even:translate-x-[-62%] relative z-10 flex h-[30rem] lg:w-[54rem] w-full ml:w-[35rem]  md:w-[44rem] flex-col items-center justify-end rounded-3xl bg-cover bg-center bg-no-repeat shadow-md drop-shadow-md  odd:self-end"
     >
       <h5 className="text_glow text-4xl text-gray-100">{data.title}</h5>
       <div className="flex w-full flex-col items-center rounded-b-3xl  bg-gray-100/60 backdrop-blur-md">
@@ -53,7 +53,7 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
         <div className="flex w-full divide-x-2 divide-black">
           <Link
             className="flex w-1/2 items-center justify-center bg-accentLow px-4 py-2 text-center underline-offset-4 hover:underline"
-            href={`${data.repoLink}`}
+            href={data.repoLink}
             target="_blank"
           >
             GitHub Repo
@@ -61,7 +61,7 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
           </Link>
           <Link
             className="flex w-1/2 items-center justify-center bg-accentLow px-4 py-2 text-center underline-offset-4 hover:underline"
-            href={`${data.hostedLink}`}
+            href={data.hostedLink}
             target="_blank"
           >
             Hosted Link
