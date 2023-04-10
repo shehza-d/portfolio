@@ -1,11 +1,11 @@
 "use client";
 
-import { ProjectType } from "@/types";
+import { IProject } from "@/types";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-const ProjectCard = ({ data }: { data: ProjectType }) => {
+const ProjectCard = ({ data }: { data: IProject }) => {
   const elementRef = useRef<HTMLDivElement>(null)!;
 
   useEffect(() => {
@@ -27,7 +27,9 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
       element.style.setProperty("--rotateY", -1 * offsetY + "deg");
     };
 
-    element.addEventListener("mousemove", handleMouseMove);
+    if (window.innerWidth > 550) {
+      element.addEventListener("mousemove", handleMouseMove);
+    }
 
     return () => {
       element.removeEventListener("mousemove", handleMouseMove);
@@ -73,7 +75,7 @@ const ProjectCard = ({ data }: { data: ProjectType }) => {
   );
 };
 
-export default function Project({ data }: { data: ProjectType[] }) {
+export default function Project({ data }: { data: IProject[] }) {
   return (
     <section className="my-8">
       <div className="flex flex-col overflow-hidden mx-4 gap-8">

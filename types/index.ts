@@ -16,7 +16,7 @@ export interface contactType {
   alt: string;
 }
 
-export interface ProjectType {
+export interface IProject {
   id: string;
   title: string;
   previewImg: string;
@@ -24,4 +24,12 @@ export interface ProjectType {
   techUsed: string[];
   repoLink: string;
   hostedLink: string;
+}
+
+export interface IAbout {
+  para: string;
+  points: {
+    id: number;
+    li: string;
+  }[];
 }

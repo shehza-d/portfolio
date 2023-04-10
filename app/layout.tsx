@@ -74,8 +74,8 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="en" className={`${font.className} `}>
-      <body className="  grid-rows-[1fr,auto]">
+    <html lang="en" className={`${font.className}`}>
+      <body className={`dark:bg-[#0A192F]`}>
         {children}
         <Footer />
       </body>

@@ -43,8 +43,8 @@ export default function Hero() {
     []);
 
   return (
-    <div id="svg_container" className="flex min-h-[300vh] md:min-h-[400vh]">
-      <div className="absolute top-1 left-1/2 flex flex-col items-center text-lg font-extralight">
+    <div id="svg_container" className="flex min-h-[200vh] md:min-h-[400vh]">
+      <div className="absolute top-1 left-[42%] md:left-[47%] flex flex-col items-center text-lg font-extralight">
         SCROLL
         <MdOutlineKeyboardDoubleArrowDown className="animate-bounce text-3xl" />
       </div>
