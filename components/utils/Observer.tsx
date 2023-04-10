@@ -47,7 +47,6 @@ export default function Observer() {
     observerForPic.observe(profilePic);
     /* This is for ProfilePic END */
 
-
     /* This is for fade ani */
     const observerFade = new IntersectionObserver(
       (entries) => {
@@ -83,7 +82,6 @@ export default function Observer() {
       observerSkills.observe(element);
     });
     /* This is for skills ani END */
-
 
     return () => {
       //   observer.disconnect();

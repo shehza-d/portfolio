@@ -4,28 +4,27 @@
 
 :root {
   --accent-color: #31f711;
+
   --accent-low-op: #30f71190;
   /* --accent-color: #42e229ea; */
 
-  /* https://github.com/bchiang7/v4
+  /* https://github.com/bchiang7/v4 */
 
-Navy	        #0a192f
-Light Navy	  #112240 
-Lightest Navy	#233554
-Slate         #8892b0
-Light Slate	  #a8b2d1
-Lightest Slate#ccd6f6 
-White         #e6f1ff 
-Green         #64ffda
-
-  */
+  --acc-navy: #0a192f;
+  --acc-lightNavy: #112240;
+  --acc-lightestNavy: #233554;
+  --acc-acSlate: #8892b0;
+  --acc-lightSlate: #a8b2d1;
+  --acc-lightestSlate: #ccd6f6;
+  --acc-acWhite: #e6f1ff;
+  --acc-grn: #64ffda;
 }
 
-* {
-  @apply selection:bg-accent;
-}
 body {
   cursor: url("../public/cursor.png"), auto !important;
+}
+* {
+  @apply selection:bg-accent;
 }
 .gradient {
   @apply bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent;
@@ -36,6 +35,7 @@ body {
 .S_Underline {
   @apply after:absolute after:left-0 after:-bottom-1 after:h-[0.1875rem] after:w-0 after:bg-slate-800 after:transition-all after:duration-500 after:content-[''];
 }
+
 .center {
   display: flex;
   justify-content: center;

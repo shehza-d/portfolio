@@ -28,6 +28,14 @@ export interface IProject {
 
 export interface IAbout {
   para: string;
+  aayah: {
+    arabic: string;
+    translation: string;
+  };
+  poetry: {
+    line1: string;
+    line2: string;
+  };
   points: {
     id: number;
     li: string;

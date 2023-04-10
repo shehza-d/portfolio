@@ -13,14 +13,11 @@ import { topProjects } from "@/data";
 import Link from "next/link";
 
 export default function Home() {
-
-
-
   return (
     <main>
       <Cursor />
       <Hero />
-      {/* <Particle /> */}
+      <Particle />
       <Observer />
 
       <div className="mx-6 mm:mx-10 md:mx-16 lg:mx-20 xl:mx-28">
@@ -40,7 +37,6 @@ export default function Home() {
         </div>
         <Contact />
       </div>
-
     </main>
   );
 }

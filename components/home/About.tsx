@@ -10,7 +10,6 @@ const urduFont = localFont({
   // display: "swap",
 });
 
-
 export default function About() {
   return (
     <section className="my-8 mt-16 flex flex-col items-center">
@@ -23,7 +22,7 @@ export default function About() {
       />
 
       <Image
-        className="profilePic relative z-10 my-6 w-96 md:w-[26.25rem] scale-50 rounded-full shadow-2xl drop-shadow-lg"
+        className="profilePic relative z-10 my-6 w-96 scale-50 rounded-full shadow-2xl drop-shadow-lg md:w-[26.25rem]"
         src={dp}
         // title="SHEHZAD"
         alt="Shehzad in FG college uniform"
@@ -32,14 +31,12 @@ export default function About() {
       />
 
       <blockquote
-        className="animation_triggering_fade opacity-0 rounded-full bg-opacity-90 bg-gradient-to-r from-blue-300 via-green-500 to-[#30f711cc] py-3 px-6 shadow-2xl hover:bg-gradient-to-l"
+        className="animation_triggering_fade rounded-full bg-opacity-90 bg-gradient-to-r from-blue-300 via-green-500 to-[#30f711cc] py-3 px-6 opacity-0 shadow-2xl hover:bg-gradient-to-l"
         dir="rtl"
       >
-        <span className={`text-lg`}>
-          وَأَن لَّيْسَ لِلْإِنسَـٰنِ إِلَّا مَا سَعَىٰ
-        </span>
+        <span className={`text-lg`}>{aboutData.aayah.arabic}</span>
         <br />
-        💚Man gets whatever he strives for
+        {aboutData.aayah.translation}
       </blockquote>
 
       <h1 className="inline text-[1px] opacity-0">
@@ -49,14 +46,14 @@ export default function About() {
 
       <h2 className="heading gradient self-start">Introduction</h2>
 
-      <p className="animation_triggering_fade opacity-0 text-justify text-lg font-light text-slate-800 dark:text-slate-200 lg:text-xl">
+      <p className="animation_triggering_fade text-justify text-lg font-light text-slate-800 opacity-0  dark:text-slate-200 lg:text-xl">
         A young and enthusiastic individual{" "}
         <span className="gradient">Making Code Beneficial</span>{" "}
         {aboutData.para}
       </p>
-      <ul className="animation_triggering_fade opacity-0 m-4 font-light text-slate-800 dark:text-slate-200">
+      <ul className="animation_triggering_fade m-4 font-light text-slate-800 opacity-0 dark:text-slate-200">
         {aboutData.points.map((item) => (
-          <li className="md:pl-4 text-justify" key={item.id}>
+          <li className="text-justify md:pl-4" key={item.id}>
             - {item.li}
           </li>
         ))}
@@ -64,11 +61,11 @@ export default function About() {
 
       <blockquote
         dir="rtl"
-        className={`${urduFont.className} animation_triggering_fade opacity-0 text-center text-2xl`}
+        className={`${urduFont.className} animation_triggering_fade text-center text-2xl opacity-0`}
       >
-        جو جنوں کی ره پر چل پڑے ، اُنھیں منزلوں نے پناہ دی
+        {aboutData.poetry.line1}
         <br />
-        جنہیں وسوسوں نے بہکا دیا، وہ قدم قدم پر بھٹک گئے
+        {aboutData.poetry.line1}
       </blockquote>
     </section>
   );

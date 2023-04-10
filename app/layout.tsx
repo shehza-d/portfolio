@@ -72,7 +72,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
     <html lang="en" className={`${font.className}`}>
       <body className={`dark:bg-[#0A192F]`}>

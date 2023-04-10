@@ -5,7 +5,9 @@ export default function Page() {
   return (
     <>
       <div className="mb-6 mt-11">
-        <h2 className="heading mx-6 mm:mx-10 md:mx-16 lg:mx-20 xl:mx-28 gradient inline-block">Projects</h2>
+        <h2 className="heading gradient mx-6 inline-block mm:mx-10 md:mx-16 lg:mx-20 xl:mx-28">
+          Projects
+        </h2>
       </div>
       <Cursor />
       <ObserverProject />

@@ -14,7 +14,7 @@ export default function Contact() {
 
       <div className="flex flex-wrap justify-evenly pt-4">
         <Link
-          className="relative z-10 flex items-center justify-between rounded-full bg-gradient-to-r from-cyan-300 via-green-400 to-[#30f711cc] p-3 py-3 px-6 shadow-xl hover:bg-gradient-to-l"
+          className="relative z-10 my-2 flex items-center justify-between rounded-full bg-gradient-to-r from-cyan-300 via-green-400 to-[#30f711cc] p-3 py-3 px-6 shadow-xl hover:bg-gradient-to-l"
           href="mailto:shehzad.dev@pm.me"
           target="_blank"
         >
@@ -22,14 +22,13 @@ export default function Contact() {
           shehzad.dev@pm.me
         </Link>
         <Link
-          className="relative z-10 flex items-center justify-between rounded-full bg-gradient-to-r from-cyan-300 via-green-400 to-[#30f711cc] p-3 py-3 px-6 shadow-xl hover:bg-gradient-to-l"
+          className="relative z-10 my-2 flex items-center justify-between rounded-full bg-gradient-to-r from-cyan-300 via-green-400 to-[#30f711cc] p-3 py-3 px-6 shadow-xl hover:bg-gradient-to-l"
           href="https://firebasestorage.googleapis.com/v0/b/shehza-d.appspot.com/o/Shehzad-MERN-Resume.pdf?alt=media&token=5c1b3446-67ec-4a07-aac1-ef95504b3cd6"
           target="_blank"
         >
           <MdEditDocument className="pr-1 text-2xl" />
           Download CV
         </Link>
-
       </div>
 
       <div className="flex items-center justify-center gap-3 py-10 min-[500px]:gap-8 lg:gap-12">
@@ -51,9 +50,9 @@ export default function Contact() {
         <label className="text-2xl font-semibold" htmlFor="newsLetter">
           News Letter
         </label>
-        <div className="mt-6 relative z-10 flex items-center">
+        <div className="relative z-10 mt-6 flex items-center ">
           <input
-            className={` h-16 flex-1 w-full rounded-tl-lg border-0 p-3 ml:p-4 text-2xl text-gray-800  outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:text-gray-100 sm:leading-6`}
+            className={`h-16 w-full flex-1 rounded-tl-lg border-0 p-3 text-2xl text-gray-800 outline-none ring-1  ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:bg-lightestNavy dark:text-gray-100 dark:ring-gray-600 sm:leading-6 ml:p-4`}
             type="email"
             name="newsLetter"
             autoComplete="email"
@@ -61,16 +60,20 @@ export default function Contact() {
             placeholder="Your Email here"
           />
           <button
-            className="h-16 rounded-tr-lg bg-accent px-2 ml:px-6 text-base ml:text-lg font-semibold text-slate-50  hover:opacity-80 active:bg-accentLow"
+            className="h-16 rounded-tr-lg bg-accent px-2 text-base font-semibold text-slate-50 hover:opacity-80 active:bg-accentLow  ml:px-6 ml:text-lg"
             type="submit"
           >
             Subscribe
           </button>
         </div>
         <textarea
-          className="mb-6 h-56 flex-1 relative z-10 rounded-b-lg  w-full border-0 p-3 ml:p-4 text-2xl text-gray-800 shadow-2xl outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:text-gray-100 sm:leading-6"
-          name="message" id="formMsg" placeholder="Your Message" cols={50}></textarea>
+          className="relative z-10 mb-6 h-56 w-full flex-1 rounded-b-lg border-0 p-3 text-2xl text-gray-800 shadow-2xl outline-none ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-accent dark:bg-lightestNavy dark:text-gray-100 dark:ring-gray-600 sm:leading-6 ml:p-4"
+          name="message"
+          id="formMsg"
+          placeholder="Your Message"
+          cols={50}
+        ></textarea>
       </form>
-    </section >
+    </section>
   );
 }
