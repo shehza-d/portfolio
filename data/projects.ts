@@ -1,6 +1,6 @@
-import { ProjectType } from "@/types";
+import { IProject } from "@/types";
 
-export const topProjects: ProjectType[] = [
+export const topProjects: IProject[] = [
   {
     id: "1",
     title: "Panaverse Website",
@@ -23,7 +23,7 @@ export const topProjects: ProjectType[] = [
   },
 ];
 
-export const allProjects: ProjectType[] = [
+export const allProjects: IProject[] = [
   {
     id: "1",
     title: "Panaverse Website",

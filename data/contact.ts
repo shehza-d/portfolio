@@ -1,6 +1,6 @@
-import { contactType } from "@/types";
+import { IContact } from "@/types";
 
-export const contactData: contactType[] = [
+export const contactData: IContact[] = [
   {
     id: "3",
     title: "Twitter",

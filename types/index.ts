@@ -1,4 +1,7 @@
-export interface skillsType {
+// https://stackoverflow.com/questions/31876947/confused-about-the-interface-and-class-coding-guidelines-for-typescript
+// https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Interfaces.md
+
+export interface ISkills {
   id: string;
   title: string;
   icon: string;
@@ -6,7 +9,7 @@ export interface skillsType {
   additionalInfo: string;
 }
 
-export interface contactType {
+export interface IContact {
   id: string;
   title: string;
   link: string;

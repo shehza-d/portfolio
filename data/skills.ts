@@ -1,6 +1,6 @@
-import { skillsType } from "@/types";
+import { ISkills } from "@/types";
 
-export const skills: skillsType[] = [
+export const skills: ISkills[] = [
   {
     id: "1",
     title: "NEXT JS",
