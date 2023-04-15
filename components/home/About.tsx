@@ -65,7 +65,7 @@ export default function About() {
       >
         {aboutData.poetry.line1}
         <br />
-        {aboutData.poetry.line1}
+        {aboutData.poetry.line2}
       </blockquote>
     </section>
   );
