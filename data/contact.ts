@@ -2,7 +2,7 @@ import { IContact } from "@/types";
 
 export const contactData: IContact[] = [
   {
-    id: "3",
+    id: "1",
     title: "Twitter",
     link: "https://twitter.com/shehza_d_",
     icon: "twitter",
@@ -11,7 +11,7 @@ export const contactData: IContact[] = [
     alt: "Twitter account icon",
   },
   {
-    id: "1",
+    id: "2",
     title: "GitHub",
     link: "https://github.com/shehza-d",
     icon: "github",
@@ -20,7 +20,7 @@ export const contactData: IContact[] = [
     alt: "github account icon",
   },
   {
-    id: "2",
+    id: "3",
     title: "LinkedIn",
     link: "https://www.linkedin.com/in/shehzadd/",
     icon: "linkedin",
@@ -38,15 +38,15 @@ export const contactData: IContact[] = [
     userName: "shehza.d",
     alt: "instagram account icon",
   },
-  //   {
-  //     id: "5",
-  //     title: "StackOver Flow",
-  //     link: "https://stackoverflow.com/users/18210334/shehzad",
-  //     icon: "stackoverflow",
-  //     iconType: "skillIcon",
-  //     userName: "shehzad",
-  //     alt: "stackoverflow account icon",
-  //   },
+  {
+    id: "5",
+    title: "LeetCode",
+    link: "https://leetcode.com/shehza_d/",
+    icon: "/icons/leetcode1.png",
+    iconType: "public",
+    userName: "shehza_d",
+    alt: "leetcode account icon",
+  },
   {
     id: "6",
     title: "UpWork",
@@ -56,6 +56,24 @@ export const contactData: IContact[] = [
     userName: "shehza-d",
     alt: "upwork freelaning account icon",
   },
+  {
+    id: "7",
+    title: "YouTube",
+    link: "https://youtube.com/@shehza-d",
+    icon: "/icons/youtube.svg",
+    iconType: "public",
+    userName: "shehza-d",
+    alt: "youtube account icon",
+  },
+  //   {
+  //     id: "6",
+  //     title: "StackOver Flow",
+  //     link: "https://stackoverflow.com/users/18210334/shehzad",
+  //     icon: "stackoverflow",
+  //     iconType: "skillIcon",
+  //     userName: "shehzad",
+  //     alt: "stackoverflow account icon",
+  //   },
   //   {
   //     id: "7",
   //     title: "GitHub",

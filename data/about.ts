@@ -21,11 +21,19 @@ export const aboutData: IAbout = {
     { id: 5, li: "🌱 Learning from Saylani SMIT and PIAIC" },
     {
       id: 6,
-      li: "👀 I am interested in Programming, Cyber Security, BlockChain(smart contracts), LeetCode, Photo/Video Editing and in Bug Bounty and Hackathons",
+      li: "👀 I am interested in Programming, Cyber Security, Photo/Video Editing.",
     },
     {
       id: 7,
+      li: "🥷🏻 Ready for Coding Competitions, Hackathons and LeetCode",
+    },
+    {
+      id: 8,
       li: "🇵🇰 A passionate Full-Stack Developer from Karachi, Pakistan",
+    },
+    {
+      id: 9,
+      li: "🌻 Check my LinkedIn for more information",
     },
   ],
 };

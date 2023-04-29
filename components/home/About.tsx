@@ -51,7 +51,7 @@ export default function About() {
         <span className="gradient">Making Code Beneficial</span>{" "}
         {aboutData.para}
       </p>
-      <ul className="animation_triggering_fade m-4 font-light text-slate-800 opacity-0 dark:text-slate-200">
+      <ul className="animation_triggering_fade m-4 text-left font-light text-slate-800 opacity-0 dark:text-slate-200">
         {aboutData.points.map((item) => (
           <li className="text-justify md:pl-4" key={item.id}>
             - {item.li}

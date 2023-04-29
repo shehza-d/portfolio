@@ -10,7 +10,7 @@ export default function Contact() {
 
   return (
     <section className="my-8">
-      <h2 className="heading gradient inline-block">Connect with me🔗</h2>
+      <h2 className="heading gradient inline-block">Connect with me</h2>
 
       <div className="flex flex-wrap justify-evenly pt-4">
         <Link
@@ -31,24 +31,23 @@ export default function Contact() {
         </Link>
       </div>
 
-      <div className="flex items-center justify-center gap-3 py-10 min-[500px]:gap-8 lg:gap-12">
-        {contactData.map((item) => {
-          return (
-            <Link
-              className="relative z-10 h-14 w-14 rounded-[12px] shadow-xl drop-shadow-md transition-transform duration-500 hover:scale-125"
-              key={item.id}
-              prefetch={false}
-              href={item.link}
-              target="_blank"
-            >
-              <Icons icon={item.icon} alt={item.alt} iconType={item.iconType} />
-            </Link>
-          );
-        })}
+      <div className="grid grid-cols-4 justify-items-center gap-3 py-10 min-[500px]:gap-8 md:px-20 lg:gap-12 lg:px-44">
+        {contactData.map((item) => (
+          <Link
+            className="relative z-10 rounded-[20px] shadow-xl drop-shadow-md transition-transform duration-500 hover:scale-125"
+            //  h-14 w-14
+            key={item.id}
+            prefetch={false}
+            href={item.link}
+            target="_blank"
+          >
+            <Icons icon={item.icon} alt={item.alt} iconType={item.iconType} />
+          </Link>
+        ))}
       </div>
       <form className="text-accent ml:p-8 lg:p-1">
         <label className="text-2xl font-semibold" htmlFor="newsLetter">
-          News Letter
+          Newsletter
         </label>
         <div className="relative z-10 mt-6 flex items-center ">
           <input

@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { IProject } from "@/types";
 import Link from "next/link";
@@ -6,39 +6,39 @@ import { useEffect, useRef } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = ({ data }: { data: IProject }) => {
-  const elementRef = useRef<HTMLDivElement>(null)!;
+  // const elementRef = useRef<HTMLDivElement>(null)!;
 
-  useEffect(() => {
-    const element = elementRef.current!;
-    const handleMouseMove = (e: any) => {
-      // get mouse position relative to the element
-      const bounds = element.getBoundingClientRect();
-      const x = e.clientX - bounds.left - bounds.width / 2;
-      const y = e.clientY - bounds.top - bounds.height / 2;
+  // useEffect(() => {
+  //   const element = elementRef.current!;
+  //   const handleMouseMove = (e: any) => {
+  //     // get mouse position relative to the element
+  //     const bounds = element.getBoundingClientRect();
+  //     const x = e.clientX - bounds.left - bounds.width / 2;
+  //     const y = e.clientY - bounds.top - bounds.height / 2;
 
-      // get offset from center of div as a percentage and tone it down a little
-      const offsetX = (x / bounds.width) * 45;
-      const offsetY = (y / bounds.height) * 45;
-      // get mouse position
-      // find the middle
+  //     // get offset from center of div as a percentage and tone it down a little
+  //     const offsetX = (x / bounds.width) * 45;
+  //     const offsetY = (y / bounds.height) * 45;
+  //     // get mouse position
+  //     // find the middle
 
-      // set rotation
-      element.style.setProperty("--rotateX", offsetX + "deg");
-      element.style.setProperty("--rotateY", -1 * offsetY + "deg");
-    };
+  //     // set rotation
+  //     element.style.setProperty("--rotateX", offsetX + "deg");
+  //     element.style.setProperty("--rotateY", -1 * offsetY + "deg");
+  //   };
 
-    if (window.innerWidth > 550) {
-      element.addEventListener("mousemove", handleMouseMove);
-    }
+  //   if (window.innerWidth > 550) {
+  //     element.addEventListener("mousemove", handleMouseMove);
+  //   }
 
-    return () => {
-      element.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     element.removeEventListener("mousemove", handleMouseMove);
+  //   };
+  // }, []);
 
   return (
     <div
-      ref={elementRef}
+      // ref={elementRef}
       style={{ backgroundImage: `url('${data.previewImg}')` }}
       className="projectCard relative z-10 flex h-[30rem] w-full translate-x-[62%] flex-col items-center justify-end overflow-hidden rounded-3xl bg-cover  bg-center bg-no-repeat opacity-5 shadow-md drop-shadow-md odd:self-end ml:w-[35rem] md:w-[44rem] md:odd:translate-x-[62%] md:even:translate-x-[-62%]  lg:w-[54rem]"
     >
