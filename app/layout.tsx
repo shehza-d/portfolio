@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Footer } from "@/components";
 import { Outfit } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const font = Outfit({
   subsets: ["latin"],
@@ -77,6 +78,7 @@ export default function RootLayout({
       <body className={`dark:bg-[#0A192F]`}>
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
