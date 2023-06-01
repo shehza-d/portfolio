@@ -182,9 +182,9 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/image.js": {
+    "(app-client)/./components/utils/Cursor.tsx": {
       "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "id": "(sc_client)/./components/utils/Cursor.tsx",
         "name": "",
         "chunks": [
           "app/layout:app/layout"
@@ -192,7 +192,7 @@ self.__RSC_MANIFEST={
         "async": false
       },
       "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "id": "(sc_client)/./components/utils/Cursor.tsx",
         "name": "*",
         "chunks": [
           "app/layout:app/layout"
@@ -200,10 +200,88 @@ self.__RSC_MANIFEST={
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "id": "(sc_client)/./components/utils/Cursor.tsx",
         "name": "default",
         "chunks": [
           "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/utils/OberverProject.tsx": {
+      "": {
+        "id": "(sc_client)/./components/utils/OberverProject.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./components/utils/OberverProject.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/utils/OberverProject.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/utils/Observer.tsx": {
+      "": {
+        "id": "(sc_client)/./components/utils/Observer.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./components/utils/Observer.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/utils/Observer.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/image.js": {
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "",
+        "chunks": [
+          "app/loading:app/loading"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "*",
+        "chunks": [
+          "app/loading:app/loading"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "default",
+        "chunks": [
+          "app/loading:app/loading"
         ],
         "async": false
       }
@@ -228,6 +306,48 @@ self.__RSC_MANIFEST={
       "default": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js": {
+      "": {
+        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "Analytics": {
+        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
+        "name": "Analytics",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "track": {
+        "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
+        "name": "track",
         "chunks": [
           "app/layout:app/layout"
         ],
@@ -528,9 +648,9 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/home/shehzad/sPROGRAMMING/NEXT/portfolio/portfolio-repo/node_modules/next/dist/client/image.js": {
+  "/home/shehzad/sPROGRAMMING/NEXT/portfolio/portfolio-repo/components/utils/Cursor.tsx": {
     "": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "id": "(app-client)/./components/utils/Cursor.tsx",
       "name": "",
       "chunks": [
         "app/layout:app/layout"
@@ -538,7 +658,7 @@ self.__RSC_MANIFEST={
       "async": false
     },
     "*": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "id": "(app-client)/./components/utils/Cursor.tsx",
       "name": "*",
       "chunks": [
         "app/layout:app/layout"
@@ -546,10 +666,88 @@ self.__RSC_MANIFEST={
       "async": false
     },
     "default": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "id": "(app-client)/./components/utils/Cursor.tsx",
       "name": "default",
       "chunks": [
         "app/layout:app/layout"
+      ],
+      "async": false
+    }
+  },
+  "/home/shehzad/sPROGRAMMING/NEXT/portfolio/portfolio-repo/components/utils/OberverProject.tsx": {
+    "": {
+      "id": "(app-client)/./components/utils/OberverProject.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./components/utils/OberverProject.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./components/utils/OberverProject.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    }
+  },
+  "/home/shehzad/sPROGRAMMING/NEXT/portfolio/portfolio-repo/components/utils/Observer.tsx": {
+    "": {
+      "id": "(app-client)/./components/utils/Observer.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./components/utils/Observer.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./components/utils/Observer.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    }
+  },
+  "/home/shehzad/sPROGRAMMING/NEXT/portfolio/portfolio-repo/node_modules/next/dist/client/image.js": {
+    "": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "",
+      "chunks": [
+        "app/loading:app/loading"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/loading:app/loading"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "default",
+      "chunks": [
+        "app/loading:app/loading"
       ],
       "async": false
     }
@@ -559,7 +757,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
-        "app/layout:app/layout"
+        "app/loading:app/loading"
       ],
       "async": false
     },
@@ -567,7 +765,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/layout:app/layout"
+        "app/loading:app/loading"
       ],
       "async": false
     },
@@ -575,7 +773,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
-        "app/layout:app/layout"
+        "app/loading:app/loading"
       ],
       "async": false
     }
@@ -632,7 +830,49 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/home/shehzad/sPROGRAMMING/NEXT/portfolio/portfolio-repo/node_modules/@next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Outfit\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":[\"100\",\"200\",\"300\",\"400\",\"500\",\"600\",\"700\",\"800\",\"900\"],\"display\":\"swap\"}],\"variableName\":\"font\"}": {
+  "/home/shehzad/sPROGRAMMING/NEXT/portfolio/portfolio-repo/node_modules/@vercel/analytics/dist/react/index.js": {
+    "": {
+      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "Analytics": {
+      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+      "name": "Analytics",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "track": {
+      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+      "name": "track",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    }
+  },
+  "/home/shehzad/sPROGRAMMING/NEXT/portfolio/portfolio-repo/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Outfit\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":[\"100\",\"200\",\"300\",\"400\",\"500\",\"600\",\"700\",\"800\",\"900\"],\"display\":\"swap\"}],\"variableName\":\"font\"}": {
     "default": {
       "id": "null",
       "name": "default",

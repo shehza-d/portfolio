@@ -1,14 +1,14 @@
 import Image from "next/image";
 import typingSvg from "../../public/typingSkills.svg";
 import dp from "../../public/dp.jpeg";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import { aboutData } from "@/data";
 
-const urduFont = localFont({
-  src: "../../public/urduFont/Jameel-Noori-Nastaleeq-Kasheeda.ttf",
-  preload: false,
-  // display: "swap",
-});
+// const urduFont = localFont({
+//   src: "../../public/urduFont/Jameel-Noori-Nastaleeq-Kasheeda.ttf",
+//   preload: false,
+//   // display: "swap",
+// });
 
 export default function About() {
   return (
@@ -59,14 +59,14 @@ export default function About() {
         ))}
       </ul>
 
-      <blockquote
+      {/* <blockquote
         dir="rtl"
         className={`${urduFont.className} animation_triggering_fade text-center text-2xl opacity-0`}
       >
         {aboutData.poetry.line1}
         <br />
         {aboutData.poetry.line2}
-      </blockquote>
+      </blockquote> */}
     </section>
   );
 }
