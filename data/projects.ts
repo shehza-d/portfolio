@@ -46,11 +46,11 @@ export const allProjects: IProject[] = [
   },
   {
     id: "3",
-    title: "Panaverse Website",
+    title: "CLI Calculator",
     previewImg:
       "https://res.cloudinary.com/deh1sqok6/image/upload/v1679250981/portfolio-ss/tpjt0re3wsw0wajsoemq.png",
     description: "A site for Panaverse Education",
-    techUsed: ["NextJS 13", "TailwindCSS", "TypeScript"],
+    techUsed: ["NODE JS", "TypeScript"],
     repoLink: "https://github.com/shehza-d/panaverse-site/",
     hostedLink: "https://panavercity-by-shehzad.vercel.app/",
   },
