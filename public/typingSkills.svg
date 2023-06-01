@@ -1,0 +1,87 @@
+<!-- https://github.com/DenverCoder1/readme-typing-svg/ -->
+<svg xmlns='http://www.w3.org/2000/svg'
+    xmlns:xlink='http://www.w3.org/1999/xlink'
+    viewBox='0 0 365 55'
+    style='background-color: #00000000;'
+    width='365px' height='55px'>
+
+    
+                <path id='path0'>
+                            <!-- Single line -->
+                                <animate id='d0' attributeName='d' begin='0s;d5.end'
+                    dur='3000ms' fill='remove'
+                    values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
+                    </path>
+    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path0'>
+            ✨ Hi , I&#039;m SHEHZAD 💯
+        </textPath>
+    </text>
+        <path id='path1'>
+                            <!-- Single line -->
+                                <animate id='d1' attributeName='d' begin='d0.end'
+                    dur='3000ms' fill='remove'
+                    values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
+                    </path>
+    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path1'>
+            ❤️‍🔥Passionate Developer💻
+        </textPath>
+    </text>
+        <path id='path2'>
+                            <!-- Single line -->
+                                <animate id='d2' attributeName='d' begin='d1.end'
+                    dur='3000ms' fill='remove'
+                    values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
+                    </path>
+    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path2'>
+            Always  Learning💡
+        </textPath>
+    </text>
+        <path id='path3'>
+                            <!-- Single line -->
+                                <animate id='d3' attributeName='d' begin='d2.end'
+                    dur='3000ms' fill='remove'
+                    values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
+                    </path>
+    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path3'>
+            Dedicated to Work💪🏻
+        </textPath>
+    </text>
+        <path id='path4'>
+                            <!-- Single line -->
+                                <animate id='d4' attributeName='d' begin='d3.end'
+                    dur='3000ms' fill='remove'
+                    values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
+                    </path>
+    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path4'>
+            Experience Seeker💯
+        </textPath>
+    </text>
+        <path id='path5'>
+                            <!-- Single line -->
+                                <animate id='d5' attributeName='d' begin='d4.end'
+                    dur='3000ms' fill='remove'
+                    values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
+                    </path>
+    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path5'>
+            from Karachi, Pakistan🇵🇰
+        </textPath>
+    </text>
+</svg>

@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-color: #31f711;
+
+  --accent-low-op: #30f71190;
+  /* --accent-color: #42e229ea; */
+
+  /* https://github.com/bchiang7/v4 */
+
+  --acc-navy: #0a192f;
+  --acc-lightNavy: #112240;
+  --acc-lightestNavy: #233554;
+  --acc-acSlate: #8892b0;
+  --acc-lightSlate: #a8b2d1;
+  --acc-lightestSlate: #ccd6f6;
+  --acc-acWhite: #e6f1ff;
+  --acc-grn: #64ffda;
+}
+
+body {
+  cursor: url("../public/cursor.png"), auto !important;
+}
+* {
+  @apply selection:bg-accent;
+}
+.gradient {
+  @apply bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent;
+}
+.heading {
+  @apply pt-6 pb-4 text-3xl font-bold md:text-4xl;
+}
+.S_Underline {
+  @apply after:absolute after:left-0 after:-bottom-1 after:h-[0.1875rem] after:w-0 after:bg-slate-800 after:transition-all after:duration-500 after:content-[''];
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bdr {
+  border: 2px solid red;
+}
+.bdr2 {
+  border: 2px solid green;
+}
+.bdr3 {
+  border: 2px solid blue;
+}
+.bdr4 {
+  border: 2px solid yellow;
+}
+
+/* ANIMATIONS */
+/* 
+               name   duration  timing func   delay   iteration count   fill mode
+    animation: crazy     4s     ease-in-out    0.5s        12            backwards;
+*/
+
+.animatePic {
+  animation: scale 1000ms ease-in-out 0s 1 forwards;
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animateFade {
+  animation: fadeAni 800ms ease-in-out 0ms 1 forwards;
+}
+@keyframes fadeAni {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* skills */
+.skillOdd {
+  animation: skillOdd 1000ms ease-out 0ms 1 forwards;
+}
+@keyframes skillOdd {
+  0% {
+    transform: translateX(-62%);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.skillEven {
+  animation: skillEven 1000ms ease-out 0ms 1 forwards;
+}
+@keyframes skillEven {
+  0% {
+    transform: translateX(62%);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* ANIMATIONS END*/
+
+/* glow */
+.bg_glow::after {
+  /* jisper ye lage ga uski position relative karni hogyi */
+  content: "";
+  background: rgba(15, 189, 15, 0.351);
+  width: 240px;
+  height: 180px;
+  position: absolute;
+  z-index: 4;
+  border-radius: 50%;
+  /* left: 50%; */
+  /* top: -50px; */
+  filter: blur(65px);
+  /* transform: translateZ(0); */
+  /* isolation: isolate; */
+}
+/* glow */
+.text_glow {
+  text-shadow: 0 0 7px #fff, 0 0 10px #000, 0 0 21px #fff,
+    0 0 42px rgb(4, 255, 0), 0 0 82px var(--accent-color), 0 0 92px #0fa,
+    0 0 102px #0fa, 0 0 151px #0fa;
+}
+/* nav */
+.navBarDiv {
+  display: flex;
+  /* flex-direction:  */
+  justify-content: flex-end;
+}
+
+.nav-bar {
+  height: 100%;
+  width: 70px;
+  /* border: 3px solid red; */
+  /* display: flex; */
+  display: inline-block;
+  /* justify-content:flex-start; */
+  position: fixed;
+  top: 100px;
+  z-index: 1;
+}
+
+.nav-ul {
+  list-style: none;
+  width: 100%;
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  /* text-orientation: sideways-right; */
+}
+
+.nav-ul > li {
+  /* text-orientation: mixed; */
+  padding: 3px;
+  margin-bottom: 20px;
+  /* border: 2px solid red; */
+  cursor: crosshair;
+}
+
+.nav-ul > li:hover {
+  font-weight: bolder;
+}
+
+.nav-ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  cursor: crosshair;
+}
+/* navbar */
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #66f07d #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  /* background-color: #ebebeb;
+  -webkit-border-radius: 12px;
+  border-radius: 12px; */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 12px;
+  /* border: 0px solid #ffffff; */
+  border: none;
+}
+/* =====  Scrollbar CSS end===== */
+
+/* projectCard */
+.projectCard {
+  /* position: relative; */
+  transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+  transform-style: preserve-3d;
+  /* -webkit-perspective: 1000; */
+}
+.projectCard > h5 {
+  /* color: red !important; */
+  /* position: relative; */
+  /* transform: translateZ(500px); */
+  /* border-radius: inherit; */
+  /* inset: 0.25rem; */
+  /* border-radius: inherit; */
+  /* background: black; */
+  z-index: 100;
+  /* filter: blur(15px); */
+}
+/* projectCard end*/
+/* Cursor */
+#cursorDiv {
+  position: fixed;
+  z-index: 7;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+  mix-blend-mode: difference;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursor_circle {
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+    left: 8px;
+    top: 8px;
+    margin-top: -50%;
+    margin-left: -50%;
+    border-radius: 50%;
+    background-color: var(--accent-low-op);
+    border: solid 2px rgb(255, 255, 255);
+    transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+}
+/* Cursor end*/
+
+/* =====  partical ===== */
+#particles-js {
+  position: fixed;
+  top: 0;
+  background-attachment: fixed;
+  z-index: 5;
+  /* border: 2px solid red; */
+  /* width: 100%; */
+  height: 100vh;
+  background-color: transparent;
+  /* background-position: 50% 50%; */
+}
+/* partical end*/

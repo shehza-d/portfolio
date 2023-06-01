@@ -1,0 +1,33 @@
+{
+  "name": "shehzad-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Protfolio Website for my self",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "turbo": "next dev --turbo"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.0.1",
+    "next": "13.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "sharp": "^0.32.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.14.6",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "postcss": "^8.4.21",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "tailwindcss": "^3.2.7",
+    "typescript": "4.9.5"
+  }
+}
