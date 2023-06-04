@@ -8,8 +8,7 @@ export default function ObserverProject() {
     const observerProjects = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry, i) => {
-          console.log(window.innerWidth);
-
+          // console.log(window.innerWidth);
           if (window.innerWidth < 650) {
             entry.target.classList.toggle("skillEven", entry.isIntersecting);
           } else if (i % 2 === 1) {

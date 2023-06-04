@@ -1,6 +1,6 @@
 import Image from "next/image";
 import typingSvg from "../../public/typingSkills.svg";
-import dp from "../../public/dp.jpeg";
+import dp from "../../public/shehzad_dp_low.jpeg";
 // import localFont from "next/font/local";
 import { aboutData } from "@/data";
 
@@ -25,9 +25,9 @@ export default function About() {
         className="profilePic relative z-10 my-6 w-96 scale-50 rounded-full shadow-2xl drop-shadow-lg md:w-[26.25rem]"
         src={dp}
         // title="SHEHZAD"
-        alt="Shehzad in FG college uniform"
-        width={1512}
-        height={1512}
+        alt="Shehzad photo in google dev fest"
+        width={1460}
+        height={1460}
       />
 
       <blockquote
