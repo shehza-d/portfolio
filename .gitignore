@@ -5,11 +5,14 @@
 /.pnp
 .pnp.js
 
+.env 
+
 # testing
 /coverage
 
 # next.js
 /.next/
+.next
 /out/
 
 # production
@@ -23,7 +26,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
 # local env files
 .env*.local
