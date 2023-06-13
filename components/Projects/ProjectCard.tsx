@@ -1,11 +1,9 @@
-// "use client";
-
-import { IProject } from "@/types";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import type { IProject } from "@/types";
+// import { useEffect, useRef } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-const ProjectCard = ({ data }: { data: IProject }) => {
+export const ProjectCard = ({ data }: { data: IProject }) => {
   // const elementRef = useRef<HTMLDivElement>(null)!;
 
   // useEffect(() => {
@@ -74,15 +72,3 @@ const ProjectCard = ({ data }: { data: IProject }) => {
     </div>
   );
 };
-
-export default function Project({ data }: { data: IProject[] }) {
-  return (
-    <section className="my-8">
-      <div className="mx-4 flex flex-col gap-8 overflow-hidden">
-        {data?.map((item) => {
-          return <ProjectCard data={item} key={item.id} />;
-        })}
-      </div>
-    </section>
-  );
-}
