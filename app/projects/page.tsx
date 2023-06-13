@@ -1,4 +1,4 @@
-import { Cursor, ObserverProject, Project } from "@/components";
+import { Cursor, ObserverProject, Projects } from "@/components";
 import { allProjects } from "@/data";
 
 export default function Page() {
@@ -15,7 +15,7 @@ export default function Page() {
       </div>
       <Cursor />
       <ObserverProject />
-      <Project data={allProjects} />;
+      <Projects data={allProjects} />;
     </>
   );
 }
