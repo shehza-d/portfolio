@@ -12,10 +12,12 @@ import Footer from "./utils/Footer";
 import Icons from "./utils/Icons";
 import Cursor from "./utils/Cursor";
 // Project
-import Project from "./Projects/Project";
+import Projects from "./Projects/Projects";
 // Oberser
 import Observer from "./utils/Observer";
 import ObserverProject from "./utils/OberverProject";
+// extras
+import GitHubCalendar from "./home/GitHubCalendar";
 
 export {
   Observer,
@@ -25,10 +27,11 @@ export {
   Cursor,
   Skills,
   About,
-  Project,
+  Projects,
   Contact,
   ContactForm,
   NavBar,
   Footer,
   Icons,
+  GitHubCalendar,
 };
