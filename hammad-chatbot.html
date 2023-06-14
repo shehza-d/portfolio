@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <noscript>
+      <style>
+        df-messenger {
+          --df-messenger-bot-icon: #2c2a2ae5;
+          --df-messenger-bot-message: #181515;
+          --df-messenger-button-titlebar-color: #000000;
+          --df-messenger-button-titlebar-font-color: rgb(255, 255, 255);
+          --df-messenger-chat-background-color: #ffffff;
+          --df-messenger-font-color: rgb(255, 255, 255);
+          --df-messenger-send-icon: #92b7fe;
+          --df-messenger-user-message: #1704ca;
+          --df-messenger-input-box-color: #edf7fc;
+          --df-messenger-input-box-size: 100px;
+        }
+      </style>
+    </noscript>
+
+    <style>
+      .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 1400px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+      }
+
+      .my-float {
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <div id="scrolltop">
+      <a class="btn btn-secondary" href="#top"
+        ><span class="icon"><i class="fas fa-angle-up fa-x"></i></span
+      ></a>
+    </div>
+    <script src="./scripts/main.js?ver=1.2.0"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Talk To Hammad 😍"
+      agent-id="0f37e6d2-e1b1-437e-a062-f6a1ceb09ef6"
+      language-code="en"
+    ></df-messenger>
+  </body>
+</html>
