@@ -16,6 +16,8 @@ import Projects from "./Projects/Projects";
 // Oberser
 import Observer from "./utils/Observer";
 import ObserverProject from "./utils/OberverProject";
+// Chatbot
+import Chatbot from "./Chatbot/index";
 // extras
 import GitHubCalendar from "./home/GitHubCalendar";
 
@@ -34,4 +36,5 @@ export {
   Footer,
   Icons,
   GitHubCalendar,
+  Chatbot,
 };
