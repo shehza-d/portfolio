@@ -8,7 +8,7 @@ export default function Chatbot() {
       <df-messenger
         intent="WELCOME"
         chat-title="Talk to Me! 💯"
-        agent-id="9b62dd6b-81fd-497c-b24e-88619a54cae2"
+        agent-id={"9b62dd6b-81fd-497c-b24e-88619a54cae2"}
         language-code="en"
       >
         {/* @ts-ignore */}
