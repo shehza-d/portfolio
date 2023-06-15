@@ -9,7 +9,7 @@ import {
   Observer,
   ObserverProject,
   GitHubCalendar,
-  Chatbot,
+  // Chatbot,
 } from "@/components";
 import { topProjects } from "@/data";
 import Link from "next/link";
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
         <GitHubCalendar />
         <Contact />
-        <Chatbot />
+        {/* <Chatbot /> */}
       </div>
     </main>
   );
