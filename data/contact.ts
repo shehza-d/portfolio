@@ -41,7 +41,7 @@ export const contactData: IContact[] = [
   {
     id: "5",
     title: "LeetCode",
-    link: "https://leetcode.com/shehza_d/",
+    link: "https://leetcode.com/shehza-d/",
     icon: "/icons/leetcode1.png",
     iconType: "public",
     userName: "shehza_d",
