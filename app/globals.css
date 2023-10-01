@@ -22,8 +22,13 @@ body {
   cursor: url("../public/cursor.png"), auto !important;
 }
 * {
-  @apply selection:bg-accent;
+  @apply selection:bg-accent selection:text-black;
 }
+
+.spacing-x {
+  @apply mx-6 mm:mx-10 md:mx-16 lg:mx-20 xl:mx-28;
+}
+
 .gradient {
   @apply bg-gradient-to-r from-blue-300 via-green-500 to-accent bg-clip-text text-transparent;
 }
@@ -143,9 +148,15 @@ df-messenger {
 }
 /* glow */
 .text_glow {
-  text-shadow: 0 0 7px #fff, 0 0 10px #000, 0 0 21px #fff,
-    0 0 42px rgb(4, 255, 0), 0 0 82px var(--accent-color), 0 0 92px #0fa,
-    0 0 102px #0fa, 0 0 151px #0fa;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #000,
+    0 0 21px #fff,
+    0 0 42px rgb(4, 255, 0),
+    0 0 82px var(--accent-color),
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
 }
 /* nav */
 .navBarDiv {
@@ -268,7 +279,8 @@ df-messenger {
     border-radius: 50%;
     background-color: var(--accent-low-op);
     border: solid 2px rgb(255, 255, 255);
-    transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    transition:
+      opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
       background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
       border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
       width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
