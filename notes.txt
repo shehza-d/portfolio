@@ -30,3 +30,7 @@ HELPING BRANDS WIN.
 COMPETITION AND CREATIVITY RUNS HARD IN HIS VEINS.
 
 make a component for quotes 
+
+clean public folder
+
+robot.txt and sitemap

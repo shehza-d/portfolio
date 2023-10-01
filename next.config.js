@@ -7,8 +7,12 @@ module.exports = {
       {
         protocol: "https",
         hostname: "skillicons.dev",
-        port: "",
+        // port: "",
         // pathname: '/account123/**',
+      },
+      {
+        protocol: "https",
+        hostname: "www.holopin.me",
       },
     ],
   },
