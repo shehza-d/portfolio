@@ -1,6 +1,8 @@
 import { Cursor, ObserverProject, Projects } from "@/components";
 import { allProjects } from "@/data";
 
+export const metadata = { title: "Projects" };
+
 export default function Page() {
   return (
     <>
