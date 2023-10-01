@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.1",
-    "next": "13.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-github-calendar": "^4.0.0",
     "react-icons": "^4.8.0"
   },
@@ -24,7 +24,7 @@
     "@types/react-dom": "18.0.11",
     "autoprefixer": "^10.4.13",
     "eslint": "8.35.0",
-    "eslint-config-next": "13.2.3",
+    "eslint-config-next": "^13.5.2",
     "postcss": "^8.4.21",
     "prettier-plugin-tailwindcss": "^0.2.7",
     "sharp": "^0.32.0",
