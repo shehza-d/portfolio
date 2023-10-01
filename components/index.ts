@@ -21,6 +21,8 @@ import Chatbot from "./Chatbot/index";
 // extras
 import GitHubCalendar from "./home/GitHubCalendar";
 
+import HacktoberfestBadges from "./contributions/HacktoberfestBadges";
+
 export {
   Observer,
   ObserverProject,
@@ -37,4 +39,5 @@ export {
   Icons,
   GitHubCalendar,
   Chatbot,
+  HacktoberfestBadges,
 };

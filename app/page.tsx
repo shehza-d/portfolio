@@ -10,6 +10,7 @@ import {
   ObserverProject,
   GitHubCalendar,
   Chatbot,
+  HacktoberfestBadges,
 } from "@/components";
 import { topProjects } from "@/data";
 import Link from "next/link";
@@ -36,6 +37,7 @@ export default function Home() {
             See more Projects
           </Link>
         </div>
+        <HacktoberfestBadges />
         <GitHubCalendar />
         <Contact />
         <Chatbot />
