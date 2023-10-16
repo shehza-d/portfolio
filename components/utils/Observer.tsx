@@ -36,13 +36,13 @@ export default function Observer() {
       (entries) => {
         entries[0].target.classList.toggle(
           "animatePic",
-          entries[0].isIntersecting
+          entries[0].isIntersecting,
         );
       },
       {
         rootMargin: "0px",
         threshold: 0.4,
-      }
+      },
     );
     observerForPic.observe(profilePic);
     /* This is for ProfilePic END */
@@ -51,12 +51,12 @@ export default function Observer() {
     const observerFade = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) =>
-          entry.target.classList.toggle("animateFade", entry.isIntersecting)
+          entry.target.classList.toggle("animateFade", entry.isIntersecting),
         );
       },
       {
         threshold: 0.3,
-      }
+      },
     );
     fadeAni.forEach((element) => {
       observerFade.observe(element);
@@ -76,7 +76,7 @@ export default function Observer() {
           }
         });
       },
-      { rootMargin: "-10px" }
+      { rootMargin: "-10px" },
     );
     skills.forEach((element) => {
       observerSkills.observe(element);
