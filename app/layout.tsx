@@ -1,8 +1,9 @@
 import "./globals.css";
-import { Footer } from "@/components";
 import { Outfit } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { metadataObj } from "@/utils/seo/metadata";
+import Footer from "@/components/utils/Footer";
+import Banner from "@/components/utils/Banner";
 
 const font = Outfit({
   subsets: ["latin"],
@@ -21,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={font.className}>
       <body
-        className={`dark:bg-[#0A192F] grid min-h-screen grid-rows-[1fr,auto]`}
+        className={`dark:bg-[#0A192F] gri min-h-screen gridrows-[1fr,auto]`}
       >
+        <Banner />
         {children}
         <Footer />
         <Analytics />

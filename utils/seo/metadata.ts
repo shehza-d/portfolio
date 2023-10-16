@@ -3,7 +3,6 @@
 // https://smartkeyword.io/en/seo-on-page-open-graph-twitter-card/
 // https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup
 
-
 import type { Metadata } from "next";
 
 // export const metadata = {
@@ -74,12 +73,12 @@ export const metadataObj: Metadata = {
     siteName: "Next.js",
     images: [
       {
-        url: image, //"/banner.png",
+        url: "/banner.png",
         width: 800,
         height: 600,
       },
       {
-        url: `${siteUrl}/shehzad_dp_high.jpeg`,
+        url: "/banner.png" || `${siteUrl}/shehzad_dp_high.jpeg`,
         width: 1800,
         height: 1600,
         alt: "My custom alt",
