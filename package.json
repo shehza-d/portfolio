@@ -2,7 +2,7 @@
   "name": "shehzad-portfolio",
   "version": "0.1.0",
   "private": true,
-  "description": "Protfolio Website for my self",
+  "description": "Portfolio Website for my self",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

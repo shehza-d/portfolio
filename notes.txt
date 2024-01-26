@@ -34,3 +34,7 @@ make a component for quotes
 clean public folder
 
 robot.txt and sitemap
+
+take inspiration
+https://ibilalkayy.com/
+https://karachiwala.dev/
