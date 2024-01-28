@@ -21,9 +21,9 @@ export default function Banner() {
 
   return (
     <div
-      className={`relative ml:sticky top-0 z-50 isolate flex items-center overflow-hidden ${
+      className={`relative top-0 isolate z-50 flex items-center overflow-hidden ${
         isDarkMode ? "bg-gray-600/70" : "bg-gray-50/70"
-      }  px-3.5 py-2.5 md:px-6 backdrop-blur-sm`}
+      } px-3.5 py-2.5 backdrop-blur-sm ml:sticky md:px-6`}
     >
       <div
         className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -38,9 +38,9 @@ export default function Banner() {
         <BlurDiv />
       </div>
       <p
-        className={`text-sm ${
+        className={`mx-auto text-sm leading-4 ml:leading-6 ${
           isDarkMode ? "text-gray-300" : "text-gray-900"
-        } leading-4 ml:leading-6 mx-auto`}
+        }`}
       >
         <strong className="font-semibold">Free Palestine 🇵🇸</strong>
         <svg

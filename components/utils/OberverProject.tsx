@@ -18,7 +18,7 @@ export default function ObserverProject() {
           }
         });
       },
-      { rootMargin: "-10px" }
+      { rootMargin: "-10px" },
     );
     projectCard.forEach((element) => {
       observerProjects.observe(element);
