@@ -22,10 +22,10 @@ export const contactData: IContact[] = [
   {
     id: "3",
     title: "LinkedIn",
-    link: "https://www.linkedin.com/in/shehzadd/",
+    link: "https://www.linkedin.com/in/shehza-d",
     icon: "linkedin",
     iconType: "skillIcon",
-    userName: "shehzadd",
+    userName: "shehza-d",
     alt: "LinkedIn account icon",
   },
 
