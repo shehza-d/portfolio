@@ -6,6 +6,7 @@ google search console
 
 
 cv
+
 https://firebasestorage.googleapis.com/v0/b/shehza-d.appspot.com/o/Shehzad-MERN-Resume.pdf?alt=media&token=5c1b3446-67ec-4a07-aac1-ef95504b3cd6
 
 upgrade to nextjs stable version
@@ -38,3 +39,21 @@ robot.txt and sitemap
 take inspiration
 https://ibilalkayy.com/
 https://karachiwala.dev/
+https://mashhoodalam.com/
+https://jamesclear.com/quotes
+
+
+import { SpeedInsights } from "@vercel/speed-insights/next"
+https://vercel.com/shehza-d/portfolio-shehzad/speed-insights
+
+change btn (add text shadow for readability )
+make chatbot running
+make website navbar at side and app like navbar at bottom for mobile
+
+change theme color of hashnode and portfolio (make them same)
+Connect in blogs page to show blogs from hashnode
+https://apidocs.hashnode.com/
+https://github.com/Souravdey777/HashnodeBlogCards
+https://engineering.hashnode.com/what-can-i-do-with-hashnodes-public-api
+
+https://codepen.io/supah/pen/BamxgBb

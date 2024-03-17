@@ -3,7 +3,7 @@
 // https://smartkeyword.io/en/seo-on-page-open-graph-twitter-card/
 // https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 // export const metadata = {
 //   openGraph: {
@@ -18,115 +18,123 @@ const description =
 const image = "https://shehzad.vercel.app/shehzad_dp_low.jpeg";
 const siteUrl = "https://shehzad.vercel.app";
 
-export const metadataObj: Metadata = {
-  themeColor: "#31F711",
+export const metadataObj: { metadata: Metadata; viewport: Viewport } = {
+  metadata: {
+    title: {
+      default: title, // default is required when creating a template
+      template: `${title} | %s`, // for nested routes
+    },
 
-  title: {
-    default: title, // default is required when creating a template
-    template: `${title} | %s`, // for nested routes
-  },
-
-  description,
-
-  // https://developer.mozilla.org/en-US/docs/Web/Manifest // pwa builder
-  manifest: `${siteUrl}/manifest.json`,
-
-  generator: "Next.js",
-  applicationName: "Next.JS 13",
-  referrer: "origin-when-cross-origin",
-  keywords: [
-    "NPL",
-    "AI",
-    "Chatbot",
-    "web developer",
-    "portfolio",
-    "chat bot projects",
-    "coding",
-    "innovate",
-    "development",
-    "Next.js",
-    "React",
-    "JavaScript",
-  ],
-  authors: [{ name: "Shehzad" }, { name: "Shehzad", url: siteUrl }],
-  category: "Software",
-  colorScheme: "dark light",
-  creator: "Shehzad",
-  publisher: "Shehzad",
-  alternates: {},
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  icons: {
-    icon: { url: "/fav/favicon.ico", type: "image/ico" },
-    shortcut: { url: "/fav/favicon.ico", type: "image/svg" },
-    apple: "/fav/apple-touch-icon.png",
-  },
-
-  openGraph: {
-    title,
     description,
-    type: "profile",
-    url: siteUrl,
-    siteName: "Next.js",
-    images: [
-      {
-        url: "/banner.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "/banner.png" || `${siteUrl}/shehzad_dp_high.jpeg`,
-        width: 1800,
-        height: 1600,
-        alt: "My custom alt",
-      },
-    ],
-    locale: "en-US",
-  },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "Shehzad NLP Chatbot Dev",
-    description,
-    // siteId: '1467726470533754880',
-    // creatorId: '1467726470533754880',
-    images: ["/banner.png"],
-    // card: "https://www.summary_large_image.com",
-    creator: "@Shehza_d_",
-    site: "@Shehza_d_",
-    // cardType: "summary_large_image",
-  },
-  // robots: {
-  //   index: false,
-  //   follow: true,
-  //   nocache: true,
-  //   googleBot: {
-  //     index: true,
-  //     follow: false,
-  //     noimageindex: true,
-  //     'max-video-preview': -1,
-  //     'max-image-preview': 'large',
-  //     'max-snippet': -1,
-  //   },
-  // },
+    // https://developer.mozilla.org/en-US/docs/Web/Manifest // pwa builder
+    manifest: `${siteUrl}/manifest.json`,
 
-  appleWebApp: {
-    title,
-    statusBarStyle: "black-translucent",
-    startupImage: [
-      "/banner.png",
-      {
-        url: "/banner.png",
-        media: "(device-width: 768px) and (device-height: 1024px)",
-      },
+    generator: "Next.js",
+    applicationName: "Next.JS 13",
+    referrer: "origin-when-cross-origin",
+    keywords: [
+      "NPL",
+      "AI",
+      "Chatbot",
+      "web developer",
+      "portfolio",
+      "chat bot projects",
+      "coding",
+      "innovate",
+      "development",
+      "Next.js",
+      "React",
+      "JavaScript",
     ],
+    authors: [{ name: "Shehzad" }, { name: "Shehzad", url: siteUrl }],
+    category: "Software",
+    creator: "Shehzad",
+    publisher: "Shehzad",
+    alternates: {},
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    icons: {
+      icon: { url: "/fav/favicon.ico", type: "image/ico" },
+      shortcut: { url: "/fav/favicon.ico", type: "image/svg" },
+      apple: "/fav/apple-touch-icon.png",
+    },
+
+    openGraph: {
+      title,
+      description,
+      type: "profile",
+      url: siteUrl,
+      siteName: "Next.js",
+      images: [
+        {
+          url: "/banner.png",
+          width: 800,
+          height: 600,
+        },
+        {
+          url: "/banner.png" || `${siteUrl}/shehzad_dp_high.jpeg`,
+          width: 1800,
+          height: 1600,
+          alt: "My custom alt",
+        },
+      ],
+      locale: "en-US",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: "Shehzad NLP Chatbot Dev",
+      description,
+      // siteId: '1467726470533754880',
+      // creatorId: '1467726470533754880',
+      images: ["/banner.png"],
+      // card: "https://www.summary_large_image.com",
+      creator: "@Shehza_d_",
+      site: "@Shehza_d_",
+      // cardType: "summary_large_image",
+    },
+    // robots: {
+    //   index: false,
+    //   follow: true,
+    //   nocache: true,
+    //   googleBot: {
+    //     index: true,
+    //     follow: false,
+    //     noimageindex: true,
+    //     'max-video-preview': -1,
+    //     'max-image-preview': 'large',
+    //     'max-snippet': -1,
+    //   },
+    // },
+
+    appleWebApp: {
+      title,
+      statusBarStyle: "black-translucent",
+      startupImage: [
+        "/banner.png",
+        {
+          url: "/banner.png",
+          media: "(device-width: 768px) and (device-height: 1024px)",
+        },
+      ],
+    },
+    metadataBase: new URL(
+      process.env?.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : siteUrl,
+    ),
   },
-  metadataBase: new URL(
-    process.env?.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : siteUrl,
-  ),
+  viewport: {
+    themeColor: "#31F711",
+    colorScheme: "dark light",
+
+    // ,themeColor: [
+    //   { media: '(prefers-color-scheme: light)', color: 'cyan' },
+    //   { media: '(prefers-color-scheme: dark)', color: 'black' },
+    // ],
+  },
 };
 
 // <meta property="og:title" content="Your Name - Web Developer Portfolio">
@@ -140,9 +148,9 @@ export const metadataObj: Metadata = {
 // <meta name="twitter:description" content="Explore the work of Your Name, a passionate web developer, through a collection of innovative and creative web projects.">
 // <meta name="twitter:image" content="https://www.yourwebsite.com/twitter-card-image.jpg">
 
-{
-  /* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+// {
+/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest"></link> */
-}
+// }

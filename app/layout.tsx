@@ -1,9 +1,10 @@
 import "./globals.css";
 import { Outfit } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
 import { metadataObj } from "@/utils/seo/metadata";
 import Footer from "@/components/utils/Footer";
 import Banner from "@/components/utils/Banner";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const font = Outfit({
   subsets: ["latin"],
@@ -12,7 +13,8 @@ const font = Outfit({
   // variable: '--font-outfit', // optional for tailwind
 });
 
-export const metadata = metadataObj;
+export const metadata = metadataObj.metadata;
+export const viewport = metadataObj.viewport;
 
 export default function RootLayout({
   children,
@@ -27,6 +29,7 @@ export default function RootLayout({
         <Banner />
         {children}
         <Footer />
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>

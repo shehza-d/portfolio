@@ -16,4 +16,5 @@ module.exports = {
       },
     ],
   },
+  // output: "export", // build will contain static assets => https://nextjs.org/docs/app/building-your-application/deploying/static-exports
 };
