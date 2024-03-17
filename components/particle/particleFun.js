@@ -1,12 +1,19 @@
 export default function particlesJSFun() {
   try {
+    const darkModePreference = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    )?.matches; // TRUE if user prefers dark mode
+
+    // recommended method for newer browsers: specify event-type as first argument
+    // darkModePreference.addEventListener("change", (e) => e.matches && activateDarkMode());
+
     particlesJS("particles-js", {
       particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
         color: { value: "#31F711" },
         shape: {
           type: "circle",
-          stroke: { width: 0, color: "#000000" },
+          stroke: { width: 0, color: "#000" }, //this is not changing anything
           polygon: { nb_sides: 5 },
           image: { src: "img/github.svg", width: 100, height: 100 },
         },
@@ -23,7 +30,7 @@ export default function particlesJSFun() {
         line_linked: {
           enable: true,
           distance: 150,
-          color: "#000", //
+          color: "#10b981", // darkModePreference ? "#10b981" : "#10b981"
           opacity: 0.4,
           width: 1,
         },

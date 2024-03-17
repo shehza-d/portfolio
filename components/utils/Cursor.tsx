@@ -40,6 +40,7 @@ export default function Cursor() {
       cursorCircleRef.current.style.transform = rotate + scale;
     }
   };
+  // https://youtu.be/wG_5453Vq98?si=Q9lyZXS4ulvXunIv
 
   useEffect(() => {
     window.addEventListener("mousemove", updateCoordinates);
