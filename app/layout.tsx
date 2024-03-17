@@ -12,7 +12,8 @@ const font = Outfit({
   // variable: '--font-outfit', // optional for tailwind
 });
 
-export const metadata = metadataObj;
+export const metadata = metadataObj.metadata;
+export const viewport = metadataObj.viewport;
 
 export default function RootLayout({
   children,
