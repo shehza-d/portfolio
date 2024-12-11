@@ -2,11 +2,14 @@ import { sql } from "@vercel/postgres";
 
 export default function NewsLetterForm() {
   const subscribe = async (formData: FormData) => {
-    "use server";
+    ("use server");
+
+    const email = (formData.get("newsLetter") || "") as string;
+    const message = (formData.get("message") || "") as string;
 
     const res = await sql`
 		INSERT INTO newsletter (email, message)
-		VALUES (${formData.get("newsLetter")},${formData.get("message")})
+		VALUES (${email},${message})
 	`;
     console.log("🚀 ~ subscribe ~ rows:", res);
 
