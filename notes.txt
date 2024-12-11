@@ -57,3 +57,10 @@ https://github.com/Souravdey777/HashnodeBlogCards
 https://engineering.hashnode.com/what-can-i-do-with-hashnodes-public-api
 
 https://codepen.io/supah/pen/BamxgBb
+
+
+add google dev profile link = https://g.dev/shehzadd
+
+optional = make these kind of routes
+shehzad.vercel.app/linkedin
+shehzad.vercel.app/github   

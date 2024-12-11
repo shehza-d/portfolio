@@ -12,17 +12,18 @@ import {
   Chatbot,
   HacktoberfestBadges,
 } from "@/components";
+import Scroll from "@/components/animations/Scroll";
 import { topProjects } from "@/data";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
+      <Scroll />
       <Cursor />
       <Hero />
       <Particle />
       <Observer />
-
       <div className="mx-6 mm:mx-10 md:mx-16 lg:mx-20 xl:mx-28">
         <About />
         <Skills />
