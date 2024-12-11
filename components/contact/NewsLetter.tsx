@@ -2,7 +2,7 @@ import { sql } from "@vercel/postgres";
 
 export default function NewsLetterForm() {
   const subscribe = async (formData: FormData) => {
-    ("use server");
+    "use server";
 
     const email = (formData.get("newsLetter") || "") as string;
     const message = (formData.get("message") || "") as string;
