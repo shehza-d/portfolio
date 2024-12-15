@@ -127,7 +127,7 @@ export const metadataObj: { metadata: Metadata; viewport: Viewport } = {
     ),
   },
   viewport: {
-    themeColor: "#31F711",
+    themeColor: "#5EF4B5",
     colorScheme: "dark light",
 
     // ,themeColor: [

@@ -42,7 +42,7 @@ export default function Hero() {
   );
   console.log(
     "%c It's a typical developer urge to open console 😉 \nContact me +923033111499 📡",
-    "background: #31f711; color: black; font-size:20px",
+    "background: #5EF4B5; color: black; font-size:20px",
   );
 
   return (
