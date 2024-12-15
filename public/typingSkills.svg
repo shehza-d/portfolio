@@ -12,7 +12,7 @@
                     dur='3000ms' fill='remove'
                     values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
                     </path>
-    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+    <text font-family='"monospace", monospace' fill='#5EF4B5' font-size='24'
         dominant-baseline='middle'
         x='50%' text-anchor='middle'>
         <textPath xlink:href='#path0'>
@@ -25,7 +25,7 @@
                     dur='3000ms' fill='remove'
                     values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
                     </path>
-    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+    <text font-family='"monospace", monospace' fill='#5EF4B5' font-size='24'
         dominant-baseline='middle'
         x='50%' text-anchor='middle'>
         <textPath xlink:href='#path1'>
@@ -38,7 +38,7 @@
                     dur='3000ms' fill='remove'
                     values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
                     </path>
-    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+    <text font-family='"monospace", monospace' fill='#5EF4B5' font-size='24'
         dominant-baseline='middle'
         x='50%' text-anchor='middle'>
         <textPath xlink:href='#path2'>
@@ -51,7 +51,7 @@
                     dur='3000ms' fill='remove'
                     values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
                     </path>
-    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+    <text font-family='"monospace", monospace' fill='#5EF4B5' font-size='24'
         dominant-baseline='middle'
         x='50%' text-anchor='middle'>
         <textPath xlink:href='#path3'>
@@ -64,7 +64,7 @@
                     dur='3000ms' fill='remove'
                     values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
                     </path>
-    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+    <text font-family='"monospace", monospace' fill='#5EF4B5' font-size='24'
         dominant-baseline='middle'
         x='50%' text-anchor='middle'>
         <textPath xlink:href='#path4'>
@@ -77,7 +77,7 @@
                     dur='3000ms' fill='remove'
                     values='m0,27.5 h0 ; m0,27.5 h365 ; m0,27.5 h365 ; m0,27.5 h0' keyTimes='0;0.8;0.8;1' />
                     </path>
-    <text font-family='"monospace", monospace' fill='#31F711' font-size='24'
+    <text font-family='"monospace", monospace' fill='#5EF4B5' font-size='24'
         dominant-baseline='middle'
         x='50%' text-anchor='middle'>
         <textPath xlink:href='#path5'>

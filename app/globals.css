@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --accent-color: #31f711;
-  --accent-low-op: #30f71190;
+  --accent-color: #5EF4B5;
+  --accent-low-op: #5ef4b6b0;
+
+  /* --accent-color-old: #31f711; */
+  /* --accent-low-op-old: #30f71190; */
   /* --accent-color: #42e229ea; */
 
   /* https://github.com/bchiang7/v4 */
