@@ -1,9 +1,9 @@
 import { IAbout } from "@/types";
 
 export const aboutData: IAbout = {
-  para: "who also likes to Develop, Design, Innovate, Experiment and take up new challenges with long exited journey to go. He thinks in a pragmatic way and is always learning new skills and applying those skills in practical life is a great delight. Keeps a strong eye for clean, efficient and secure coding practices and has keen understanding of Logic Building. Unlikely loves BackEnd Technicalities and Competitive Programming(C++) is his Hobby. He also loves meeting new people, exchanging ideas and spreading knowledge and positivity other than that he could be found helping others learn Programming. Seeks to join a dynamic and progressive organization offering ample opportunities and diversified exposure where he could enhance his experience.",
+  para: "I thrive on the journey of development, design, innovation, and experimentation, always eager to take up new challenges. I approach problem-solving pragmatically and find great delight in continuously learning and applying new skills in practical ways. I maintain a strong focus on clean, efficient, and secure coding practices, leveraging a keen understanding of logic building. I am particularly passionate about back-end technicalities and enjoy Competitive Programming (C++) as a hobby. Beyond coding, I value meeting new people, exchanging ideas, and spreading knowledge, often helping others learn programming. I seek to join a dynamic and progressive organization that offers ample opportunities and diversified exposure to further enhance my experience.",
   aayah: {
-    arabic: "وَأَن لَّيْسَ لِلْإِنسَـٰنِ إِلَّا مَا سَعَىٰ",
+    arabic: "وَأَن لَّيْسَ لِلْإِنسَـٰنِ إِلَّا مَا سَعَىٰ",
     translation: "💚Man gets whatever he strives for",
   },
   poetry: {
@@ -11,29 +11,29 @@ export const aboutData: IAbout = {
     line2: "جنہیں وسوسوں نے بہکا دیا، وہ قدم قدم پر بھٹک گئے",
   },
   points: [
-    { id: 1, li: "🏆 Currently learning Web 3 Development" },
+    { id: 1, li: "🏆 Continuously deepening knowledge in Web 3 Development" },
     {
       id: 2,
-      li: "💞️ Always looking forward to collaborate on projects",
+      li: "💞️ Actively exploring opportunities to collaborate on innovative projects",
     },
-    { id: 3, li: "💻 Dedicated to Work and seeking Experiences" },
-    { id: 4, li: "⛳️ MY 2023 Goal is Mastering NEXT JS" },
-    { id: 5, li: "🌱 Learning from Saylani SMIT and PIAIC" },
+    { id: 3, li: "💻 Dedicated to my craft and consistently seeking new professional experiences" },
+    { id: 4, li: "💡 Focused on mastering modern full-stack frameworks" },
+    { id: 5, li: "🌱 Committed to learning and development through various programs" },
     {
       id: 6,
-      li: "👀 I am interested in Programming, Cyber Security, Photo/Video Editing.",
+      li: "👀 Core interests include Programming, Cyber Security, and Visual Media (Photo/Video Editing)",
     },
     {
       id: 7,
-      li: "🥷🏻 Ready for Coding Competitions, Hackathons and LeetCode",
+      li: "🥷🏻 Always prepared for Coding Competitions, Hackathons, and LeetCode challenges",
     },
     {
       id: 8,
-      li: "🇵🇰 A passionate Full-Stack Developer from Karachi, Pakistan",
+      li: "🇵🇰 A passionate Full-Stack Developer based in Karachi, Pakistan",
     },
     {
       id: 9,
-      li: "🌻 Check my LinkedIn for more information",
+      li: "🌻 Check my LinkedIn profile for a detailed professional background",
     },
   ],
 };
