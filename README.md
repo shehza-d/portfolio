@@ -21,3 +21,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js. Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 Don't copy code or design of my site please!
+
+--- 
+ignore below
+
+## Related Resources
+
+### UI/UX & Portfolio Design
+* [UI/UX Design Services](https://hamrix.com/uae/services/uiux-design)
+* [Frontend Architecture Solutions](https://hamrix.com/uk/services/web-development)
+* [Next.js Development Services](https://hamrix.com/uae/services/web-development)
+
+### Mobile App Development
+* [Mobile App Development UAE](https://hamrix.com/uae/services/app-development)
+* [Cross-Platform App Solutions](https://hamrix.com/us/services/app-development)
+* [Custom Mobile Applications UK](https://hamrix.com/uk/services/custom-software)
+
+### SaaS & Ecommerce Systems
+* [SaaS Development Services](https://hamrix.com/uae/services/saas-development)
+* [Custom Ecommerce Solutions](https://hamrix.com/pk/services/custom-software)
+* [Enterprise Software Architecture](https://hamrix.com/ksa/blog/legacy-system-modernisation-saudi-arabia-2026)
+
+### AI & Future Commerce
+* [AI & ML Integration Services](https://hamrix.com/uae/services/ai-ml-integration)
+* [Generative AI Development](https://hamrix.com/us/services/generative-ai-development)
+
+### Deployment & Cloud
+* [Custom Software Development](https://hamrix.com/pk/services/custom-software)
+* [Web Development Services](https://hamrix.com/uae/services/web-development)
