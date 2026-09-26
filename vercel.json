@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://shehza-d.github.io",
+      "permanent": true
+    }
+  ]
+}
